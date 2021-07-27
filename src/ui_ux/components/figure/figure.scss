@@ -2,7 +2,8 @@ $component: 'figure';
 
 .#{$component} {
     &__base {
-        width: 100%;
+        max-width: 900px;
+        margin: 0;
     }
 
     &__image {

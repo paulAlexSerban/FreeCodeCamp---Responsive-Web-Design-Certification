@@ -1,0 +1,2 @@
+# Pages directory - The 7-in-1 SCSS Architecture
+This directory contains page-specific styles — for instance, if we used certain styles on our homepage, we would have a _homepage.scss file that declares these page-specific elements.

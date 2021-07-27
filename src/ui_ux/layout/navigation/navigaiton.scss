@@ -1,0 +1,22 @@
+@import "../../abstracts/variables.scss";
+
+$component: "navigation";
+
+.#{$component} {
+  &__base {
+    display: flex;
+  }
+
+  &__list {
+    display: none;
+    list-style: none;
+
+    @media (min-width: $tablet-min) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__list-item {
+  }
+}

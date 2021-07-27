@@ -1,0 +1,46 @@
+@import '../../abstracts/variables.scss';
+
+$component: 'header';
+
+.#{$component} {
+  &__base {
+    margin-top: $baseline * 9;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  &__title,
+  &__subtitle {
+    display: block;
+    text-align: center;
+  }
+
+  &__title {
+    
+  }
+
+  &__subtitle {
+    padding: 0 ($baseline * 3);
+    display: none;
+
+    @media (min-width: $desktop-min) {
+      display: inline-block;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    height: fit-content;
+    padding: $baseline * 1.5;
+  }
+
+  &__logo-img {
+    display: block;
+    width: 50px;
+  }
+}

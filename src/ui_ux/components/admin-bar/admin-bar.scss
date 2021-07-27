@@ -1,0 +1,24 @@
+@import '../../abstracts/variables.scss';
+
+$component: 'admin-bar';
+
+.#{$component} {
+    &__base {
+        position: fixed;
+        top: 0;
+        height: 71px;
+        padding-left: 72px;
+        background-color: black;
+        width: 100%;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            display: block;
+            color: white
+        }
+    }
+}

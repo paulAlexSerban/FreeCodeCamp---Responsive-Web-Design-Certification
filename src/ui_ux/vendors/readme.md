@@ -1,0 +1,2 @@
+# Vendors directory - The 7-in-1 SCSS Architecture
+These are third-party stylesheets used by a project. For instance, if we used Bootstrap in a project, the Bootstrap CSS file would be downloaded and added to this directory.
