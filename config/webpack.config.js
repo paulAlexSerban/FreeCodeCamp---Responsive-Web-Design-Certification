@@ -45,6 +45,10 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"),
     assetModuleFilename: 'assets/[name][ext]'
   },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
   mode: "development",
   module: {
     rules: [
@@ -80,11 +84,11 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webm|mp4)(\?v=\d+\.\d+\.\d+)?$/i,
         type: 'asset/resource'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf)(\?v=\d+\.\d+\.\d+)?$/i,
         type: 'asset/resource'
       },
       {
