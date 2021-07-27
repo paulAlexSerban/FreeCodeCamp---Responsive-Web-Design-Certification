@@ -1,80 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+    <title>Tribute Page to Jerry Thomas</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" 
-				content="IE=edge" />
-	<meta name="viewport" 
-				content="width=device-width, initial-scale=1.0" />
-	<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-	<title>Tribute Page to Jerry Thomas</title>
-</head>
-
-<body id="body">
-	<header class="header__base" 
-					id="header" 
-					data-javascript-component="header">
-		<h1 class="header__heading">
-			<span class="header__title" 
-						id="title">Tribute Page to Jerry "The Profesor" Thomas</span>
-			<span class="header__subtitle">freecodecamp.org - Responsive Web Design Certification Project</span>
-		</h1>
-		<nav class="navigation__base"
-				 data-javascript-component="navigation">
-			<ul class="navigation__list">
-				<li class="navigation__list-item">
-					<a class="navigatin__link" 
-						 href="./personal_portfolio.html" target="_blank" rel="noopener noreferrer">home</a>
-				</li>
-				<li class="navigation__list-item">
-					<a class="navigatin__link" 
-					   href="./survey_form.html" target="_blank" rel="noopener noreferrer">survey form</a>
-				</li>
-				<li class="navigation__list-item">
-					<a class="navigatin__link" 
-					   href="./product_landing_page.html" target="_blank" rel="noopener noreferrer">product landing page</a>
-				</li>
-				<li class="navigation__list-item">
-					<a class="navigatin__link" 
-					   href="./technical_documentation_page.html" target="_blank" rel="noopener noreferrer">technical documentation page</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main id="main">
-		<figure class="figure__base" id="img-div">
-			<img class="figure__image" 
-					 src="../../assets/images/jt-blazer-bw.jpg" 
-					 alt="alternative_text" id="image" />
-			<figcaption class="figure__caption" 
-			            id="img-caption">image description</figcaption>
-		</figure>
-		<article class="article__base" id="tribute-info">
-			<h2>Who was Jerry Tomas?</h2>
-		</article>
-	</main>
-	<footer class="footer__base" 
-	        id="footer">
-		<h3 class="footer__title">Refrences</h3>
-		<ol class="footer__list">
-			<li class="footer__list-item">
-				<a class="footer__link" 
-				   id="tribute-link" 
-					 href="https://en.wikipedia.org/wiki/Jerry_Thomas_(bartender)"
-					target="_blank">Wikipedia - Jerry Thomas (bartender)</a>
-			</li>
-			<li class="footer__list-item">
-				<a class="footer__link" 
-				   id="tribute-link"
-					 href="https://www.diffordsguide.com/people/51723/bartender/jerry-thomas" target="_blank">Diffords Guide - Jerry Thomas</a>
-			</li>
-			<li class="footer__list-item">
-				<a class="footer__link" id="tribute-link" href="https://www.liquor.com/articles/jerry-thomas-125-years-later/"
-					target="_blank">Liquor.com - Jerry Thomas</a>
-			</li>
-		</ol>
-	</footer>
-</body>
-
+  <body id="body">
+    <header class="header__base" id="header" data-javascript-component="header">
+      <div class="admin-bar__base">
+        <p class="admin-bar__description">
+          <span>freecodecamp.org</span>
+          <span
+            >Tribute Page - Responsive Web Design Certification Project</span
+          >
+        </p>
+      </div>
+      <div class="header__container">
+        <h1 class="header__heading">
+          <span class="header__title" id="title"
+            >Jerry "The Profesor" Thomas</span
+          >
+        </h1>
+        <div class="header__logo">
+          <img
+            class="header__logo-img"
+            src="../../assets/icons/Freecodecamp-icon-vector-01.svg"
+            alt="freecodecamp logo"
+          />
+        </div>
+      </div>
+      <nav class="navigation__base" data-javascript-component="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a
+              class="navigatin__link"
+              href="./personal_portfolio.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >home</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigatin__link"
+              href="./survey_form.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >survey form</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigatin__link"
+              href="./product_landing_page.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >product landing page</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigatin__link"
+              href="./technical_documentation_page.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >technical documentation page</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <figure class="figure__base" id="img-div">
+        <img
+          class="figure__image"
+          src="../../assets/images/jt-blazer-bw.jpg"
+          alt="alternative_text"
+          id="image"
+        />
+        <figcaption class="figure__caption" id="img-caption">
+          image description
+        </figcaption>
+      </figure>
+      <article class="article__base" id="tribute-info">
+        <h2>Who was Jerry Tomas?</h2>
+      </article>
+    </main>
+    <footer class="footer__base" id="footer">
+      <h3 class="footer__title">Refrences</h3>
+      <ol class="footer__list">
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            id="tribute-link"
+            href="https://en.wikipedia.org/wiki/Jerry_Thomas_(bartender)"
+            target="_blank"
+            >Wikipedia - Jerry Thomas (bartender)</a
+          >
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            id="tribute-link"
+            href="https://www.diffordsguide.com/people/51723/bartender/jerry-thomas"
+            target="_blank"
+            >Diffords Guide - Jerry Thomas</a
+          >
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            id="tribute-link"
+            href="https://www.liquor.com/articles/jerry-thomas-125-years-later/"
+            target="_blank"
+            >Liquor.com - Jerry Thomas</a
+          >
+        </li>
+      </ol>
+    </footer>
+  </body>
 </html>
