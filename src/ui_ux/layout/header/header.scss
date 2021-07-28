@@ -28,7 +28,7 @@ $component: 'header';
     padding: 0 ($baseline * 3);
     display: none;
 
-    @media (min-width: $desktop-min) {
+    @include respond(min-desktop) {
       display: inline-block;
     }
   }

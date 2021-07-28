@@ -1,4 +1,4 @@
-@import './breakpoints.scss';
+@import './media-queries';
 @import './mixins.scss';
 // SCSS Variables
 
@@ -36,4 +36,15 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
+
+// colors
+$c-white:                         #fff;
+$c-cultured:                      #eeeeee;
+$c-lightgrey:                     $light-grey;
+$c-pumice:                        $c-cultured;
+$c-mid-grey:                      $mid-grey;
+$c-quick-silver:                  $c-mid-grey;
+$c-dark-grey:                     $dark-grey;
+$c-davys-grey:                    $c-dark-grey;
+$c-black:                         #000;
 

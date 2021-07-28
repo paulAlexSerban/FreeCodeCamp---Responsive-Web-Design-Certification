@@ -11,7 +11,7 @@ $component: "navigation";
     display: none;
     list-style: none;
 
-    @media (min-width: $tablet-min) {
+    @include respond(min-tab-port) {
       display: flex;
       flex-direction: row;
     }

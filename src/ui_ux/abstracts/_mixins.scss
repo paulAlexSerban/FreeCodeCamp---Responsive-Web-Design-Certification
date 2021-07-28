@@ -1,0 +1,39 @@
+// SCSS Mixins
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin absCenter($leftPos: 50%, $topPos: 50%, $translated: true) {
+  position: absolute;
+  top: $topPos;
+  left: $leftPos;
+  @if $translated {
+    transform: translate(-50%, -50%);
+  }
+}

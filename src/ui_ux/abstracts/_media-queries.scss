@@ -1,0 +1,56 @@
+// Media Query Manager
+/*
+  0 - 600px:           Phone
+  600px - 900px:       Tablet portrait
+  900px - 1200px:      Tablet landscape
+  [1200px - 1800px]:   normal styles apply
+  1800px + :           Big desktop
+  
+  $breakpoint argument names
+    max-phone         =    max-width: 600px
+    max-tab-port      =    max-width: 900px
+    max-tab-port      =    max-width: 1200px
+    max-big-desktop   =    max-width: 1800px;
+
+    min-tab-port      =    min-width: 768px
+    min-desktop       =    min-width: 992px
+    min-desk-xl       =    min-width: 1200px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == max-phone {
+      @media only screen and (max-width: 60rem) {
+        @content;
+      } // 600px
+    }
+    @if $breakpoint == min-tab-port {
+      @media only screen and (min-width: 76.8rem) {
+        @content;
+      }
+    }
+    @if $breakpoint == min-desktop {
+      @media only screen and (min-width: 99.2rem) {
+        @content;
+      }
+    }
+    @if $breakpoint == max-tab-port {
+      @media only screen and (max-width: 90rem) {
+        @content;
+      } // 900px
+    }
+    @if $breakpoint == max-tab-land {
+      @media only screen and (max-width: 120rem) {
+        @content;
+      } // 1200px
+    }
+    @if $breakpoint == min-desk-xl {
+      @media only screen and (min-width: 120rem) {
+        @content;
+      }
+    }
+    @if $breakpoint == max-big-desktop {
+      @media only screen and (max-width: 180rem) {
+        @content;
+      } // 1800px
+    }
+  }
