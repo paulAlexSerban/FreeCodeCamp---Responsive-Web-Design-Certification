@@ -5,7 +5,7 @@
 - Google Lighthouse 100% score
 - Applied Accessibility and Inclusive Web Design
 - Component-based development
-- '7-1 Sass Architecture' folder structure addapted as per project requirements
+- '7-1 Sass Architecture' folder structure adapted as per project requirements
 - BEM for CSS class naming convention and architecture
 - Semnatic HTML
 - Validated HTML and CSS
