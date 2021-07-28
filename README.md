@@ -1,4 +1,4 @@
-# FreeCodeCamp.org---Responsive_Web_Design_Certification
+# freeCodeCamp.org - Responsive Web Design Certification
 
 ## Front-end Concepts
 - Mobile-first Design, Responsive Web Design and Progressive Advancement
