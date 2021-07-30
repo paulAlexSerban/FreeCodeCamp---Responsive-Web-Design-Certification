@@ -1,3 +1,5 @@
+import './header.scss';
+
 const headerStructure = () => {
 	class Header {
 		constructor(element) {
@@ -10,7 +12,7 @@ const headerStructure = () => {
 		}
 	}
 
-	document.querySelectorAll('[data-javascript-component="header"]').forEach(el => {
+	document.querySelectorAll('[data-js-cmp="header"]').forEach(el => {
 			new Header(el)
 		}
 	)

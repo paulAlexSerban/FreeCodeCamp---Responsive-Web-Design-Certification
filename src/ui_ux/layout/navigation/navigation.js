@@ -1,3 +1,5 @@
+import './navigation.scss';
+
 const navigationStructure = () => {
 	class Navigation {
 		constructor(element) {
@@ -10,7 +12,7 @@ const navigationStructure = () => {
 		}
 	}
 
-	document.querySelectorAll('[data-javascript-component="navigation"]').forEach(el => {
+	document.querySelectorAll('[data-js-cmp="navigation"]').forEach(el => {
 			new Navigation(el)
 		}
 	)
