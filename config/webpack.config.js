@@ -1,10 +1,11 @@
 const path = require("path");
 const glob = require("glob");
+const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
 
 let htmlPageNames = [];
 let htmlWebpackPluginPages = [];
@@ -35,14 +36,9 @@ const getEntries = () =>
 
 module.exports = {
   entry: getEntries(),
-  devServer: {
-    contentBase: './dist',
-    port: 9000,
-    index: 'personal_portfolio.html'
-    },
   output: {
-    filename: "scripts/[name].[contenthash].scripts.js",
-    path: path.resolve(__dirname, "../dist"),
+    filename: "scripts/[name].scripts.js",
+    path: path.resolve(__dirname, "../docs"),
     assetModuleFilename: 'assets/[name][ext]'
   },
   optimization: {
@@ -84,12 +80,15 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|webm|mp4)(\?v=\d+\.\d+\.\d+)?$/i,
+        test: /\.(png|jpg|jpeg|gif|webm|mp4|woff|woff2|eot|ttf|otf)(\?v=\d+\.\d+\.\d+)?$/i,
         type: 'asset/resource'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)(\?v=\d+\.\d+\.\d+)?$/i,
-        type: 'asset/resource'
+        test: /\.svg$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'svgs/icon-[name][ext]'
+        }
       },
       {
         test: /\.html$/i,
@@ -99,9 +98,14 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles/[name].[contenthash].styles.css",
+      filename: "styles/[name].styles.css",
     }),
     new CleanWebpackPlugin(),
-    ...htmlWebpackPluginPages
+    ...htmlWebpackPluginPages,
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProgressPlugin(),
+    new HtmlWebpackInlineSVGPlugin({
+      inlineAll: true
+    })
   ],
 };

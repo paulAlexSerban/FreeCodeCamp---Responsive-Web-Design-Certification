@@ -1,10 +1,10 @@
-@import '../../abstracts/variables.scss';
+@import '../../abstracts/abstracts.scss';
 
-$component: 'header';
+$layout-cmp: 'header';
 
-.#{$component} {
+.#{$layout-cmp} {
   &__base {
-    margin-top: $baseline * 9;
+    margin-top: $basesize * 9;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
@@ -25,7 +25,7 @@ $component: 'header';
   }
 
   &__subtitle {
-    padding: 0 ($baseline * 3);
+    padding: 0 ($basesize * 3);
     display: none;
 
     @include respond(min-desktop) {
@@ -36,7 +36,7 @@ $component: 'header';
   &__logo {
     display: flex;
     height: fit-content;
-    padding: $baseline * 1.5;
+    padding: $basesize * 1.5;
   }
 
   &__logo-img {

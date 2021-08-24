@@ -1,0 +1,21 @@
+@import './color-list.scss';
+
+$color-primary: $c-french-sky-blue;
+$color-primary-dark: $c-blue-crayola;
+
+$color-secondary: $c-rich-black-FOGRA-29;
+
+
+
+/// Main brand color
+/// @type Color
+$brand-color: $color-primary !default;
+
+/// Copy text color
+/// @type Color
+$text-color: $c-eerie-black !default;
+
+/// Background Color
+/// @type Color
+$color-background: $color-primary !default;
+

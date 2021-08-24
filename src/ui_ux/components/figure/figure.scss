@@ -1,17 +1,19 @@
-$component: 'figure';
+@import '../../abstracts/abstracts.scss';
 
-.#{$component} {
-    &__base {
-        max-width: 900px;
-        margin: 0;
-    }
+$cmp: 'figure';
 
-    &__image {
-        max-width: 100%;
-        display: block;
-    }
+.#{$cmp} {
+  &__base {
+    max-width: 900px;
+    margin: 0;
+  }
 
-    &__caption {
-        color: red;
-    }
+  &__image {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__caption {
+    color: red;
+  }
 }
