@@ -5,18 +5,44 @@ $layout-cmp: "navigation";
 .#{$layout-cmp} {
   &__base {
     display: flex;
+    padding: ($basesize * 3) ($basesize * 2);
+    background-color: rgba($c-eerie-black, 0.1);
   }
 
   &__list {
-    display: none;
+    display: flex;
+    flex-direction: column;
     list-style: none;
 
     @include respond(min-tab-port) {
-      display: flex;
       flex-direction: row;
+      width: 100%;
+      justify-content: center;
     }
   }
 
   &__list-item {
+    font-size: 1.5rem;
+    padding-right: $basesize * 3;
+    font-family: $code-font-stack;
+
+    &:not(:first-child) {
+      padding-left: $basesize * 3;
+      border-left: 1px solid $c-eerie-black;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:focus {
+      color: $c-eerie-black;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
