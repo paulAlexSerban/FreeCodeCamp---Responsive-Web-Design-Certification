@@ -1,0 +1,41 @@
+@import '../../abstracts/abstracts.scss';
+
+$layout-cmp: 'footer';
+
+.#{$layout-cmp} {
+  &__base {
+    width: 100%;
+    max-width: $max-width;
+    margin-top: $basesize * 4;
+    background-color: rgba($c-eerie-black, 0.1);
+    border-radius: $round-border;
+    overflow: hidden;
+    box-shadow: $box-shadow-dark;
+  }
+
+  &__title {
+    margin: $basesize * 3;
+  }
+
+  &__copyright {
+    text-align: right;
+    color: $c-davys-grey;
+    margin-bottom: $basesize;
+    font-size: 1.2rem;
+
+    a {
+      &,
+      &:link,
+      &:visited,
+      &:active,
+      &:focus {
+        color: $c-eerie-black;
+        text-decoration: none;
+      }
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,110 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <title>Tribute Page to Jerry Thomas</title>
-  </head>
 
-  <body id="body">
-    <header class="header__base" id="header" data-js-cmp="header">
-      <div class="admin-bar__base">
-        <p class="admin-bar__description">
-          <span>freecodecamp.org</span>
-          <span>Tribute Page - Responsive Web Design Certification Project</span>
-        </p>
-      </div>
-      <div class="header__container">
-        <h1 class="header__heading">
-          <span class="header__title" id="title">Jerry "The Professor" Thomas</span>
-        </h1>
-        <div class="header__logo">
-          <img
-            class="header__logo-img"
-            src="../../assets/icons/Freecodecamp-icon-vector-01.svg"
-            alt="freecodecamp logo"/>
-        </div>
-      </div>
-      <nav class="navigation__base" data-js-cmp="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__list-item">
-            <a
-              class="navigatin__link"
-              href="./personal_portfolio.html"
-              target="_blank"
-              rel="noopener noreferrer">home</a
-            >
-          </li>
-          <li class="navigation__list-item">
-            <a
-              class="navigatin__link"
-              href="./survey_form.html"
-              target="_blank"
-              rel="noopener noreferrer">survey form</a
-            >
-          </li>
-          <li class="navigation__list-item">
-            <a
-              class="navigatin__link"
-              href="./product_landing_page.html"
-              target="_blank"
-              rel="noopener noreferrer">product landing page</a
-            >
-          </li>
-          <li class="navigation__list-item">
-            <a
-              class="navigatin__link"
-              href="./technical_documentation_page.html"
-              target="_blank"
-              rel="noopener noreferrer">technical documentation page</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main">
-      <figure class="figure__base" id="img-div">
-        <img
-          class="figure__image"
-          src="../../assets/images/jt-blazer-bw.jpg"
-          alt="alternative_text"
-          id="image"/>
-        <figcaption class="figure__caption" id="img-caption">
-          image description
-        </figcaption>
-      </figure>
-      <article class="article__base" id="tribute-info">
-        <h2>Who was Jerry Tomas?</h2>
-      </article>
-    </main>
-    <footer class="footer__base" id="footer">
-      <h3 class="footer__title">Refrences</h3>
-      <ol class="footer__list">
-        <li class="footer__list-item">
-          <a
-            class="footer__link"
-            id="tribute-link"
-            href="https://en.wikipedia.org/wiki/Jerry_Thomas_(bartender)"
-            target="_blank">Wikipedia - Jerry Thomas (bartender)</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <title>Tribute Page</title>
+</head>
+
+<body id="body">
+  <header class="header__base" id="header" data-js-cmp="header">
+    <div class="admin-bar__base">
+      <p class="admin-bar__description">
+        <span>freecodecamp.org</span>
+        <span>Tribute Page - Responsive Web Design Certification Project</span>
+      </p>
+      <img class="admin-bar__logo" src="../../assets/icons/Freecodecamp-icon-vector-01.svg" alt="freecodecamp logo" />
+    </div>
+    <div class="header__container">
+      <h1 class="header__heading" id="title">
+        Jerry
+        <span class="header__title">"The Professor"</span>
+        Thomas
+      </h1>
+    </div>
+    <nav class="navigation__base" data-js-cmp="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./personal_portfolio.html" target="_blank"
+            rel="noopener noreferrer">Home</a>
         </li>
-        <li class="footer__list-item">
-          <a
-            class="footer__link"
-            id="tribute-link"
-            href="https://www.diffordsguide.com/people/51723/bartender/jerry-thomas"
-            target="_blank">Difford's Guide - Jerry Thomas</a>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./survey_form.html" target="_blank" rel="noopener noreferrer">Survey
+            Form</a>
         </li>
-        <li class="footer__list-item">
-          <a
-            class="footer__link"
-            id="tribute-link"
-            href="https://www.liquor.com/articles/jerry-thomas-125-years-later/"
-            target="_blank">Liquor.com - Jerry Thomas</a
-          >
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./product_landing_page.html" target="_blank"
+            rel="noopener noreferrer">Product Landing Page</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./technical_documentation_page.html" target="_blank"
+            rel="noopener noreferrer">Technical Documentation Page</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main__base" id="main">
+    <figure class="figure__base" id="img-div">
+      <img class="figure__image" src="../../assets/images/jt-blazer-bw.jpg" alt="alternative_text" id="image" />
+      <figcaption class="figure__caption" id="img-caption">
+        Jerry "The Professor" Thomas preparing the "Blue Blazer Cocktail" using the throw preparation technique.
+      </figcaption>
+    </figure>
+    <article class="article__base" id="tribute-info">
+      <h2 class="article__heading">Who was Jerry Tomas?</h2>
+      <p><strong>Jeremiah "Jerry" P. Thomas (October 30, 1830 – December 15, 1885)</strong> was an American bartender
+        who owned and operated saloons in New York City. Because of his pioneering work in popularizing cocktails across
+        the United States as well, he is considered "the father of American mixology". In addition to writing the
+        seminal work on cocktails, <span>"The Bar-Tender's Guide"</span> (alternately titled <span>"How to Mix Drinks or
+          The Bon-Vivant's Companion"</span>), Thomas displayed creativity and showmanship while preparing drinks and
+        established the image of the bartender as a creative professional. As such, he was often nicknamed <span>the
+          "Professor" Jerry Thomas.</span></p>
+
+      <h3>Early life, education and work</h3>
+      <p>Thomas was born about 1830 in Sackets Harbor, New York. As a young man, he learned bartending in New Haven,
+        Connecticut before sailing for California during its mid-19th century Gold Rush. While in California, Thomas
+        worked as a <span>bartender, gold prospector and minstrel show manager</span>. According to his 1885 obituary,
+        he was left some money by his father, which helped in these travels.</p>
+
+      <p>Thomas moved back to the East Coast in <span>1851</span>, settling in <span>New York City</span>. He opened a
+        saloon below <span>Barnum's American Museum;</span> it would be the first of four saloons he would run in New
+        York City over his lifetime. After running this first bar, Thomas went on the road for several years, working as
+        the head bartender at hotels and saloons in St. Louis, Missouri; Chicago, Illinois; San Francisco, California;
+        Charleston, South Carolina; and New Orleans, Louisiana. At one point he toured Europe, carrying along a set of
+        solid-silver bar tools. He was well known for his showmanship as a bartender: he developed elaborate and flashy
+        techniques of mixing cocktails, sometimes while juggling bottles, cups and mixers. He often wore flashy jewelry
+        and had his bar tools and cups embellished with precious stones and metals. At the Occidental Hotel in San
+        Francisco, Thomas was earning $100 a week—more than the Vice President of the United States.</p>
+
+      <h3>The first "Bar-Tender's Guide"</h3>
+      <p>In 1862, Thomas finished "Bar-Tender's Guide" (alternately titled <span>"How to Mix Drinks or The Bon-Vivant's
+          Companion")</span>, the first drink book ever published in the United States. The book collected and codified
+        what was then an oral tradition of recipes from the early days of cocktails, including some of his own
+        creations; the guide laid down the principles for formulating mixed drinks of all categories. He would update it
+        several times in his lifetime to include new drinks that he discovered or created. The first edition of the
+        guide included the first written recipes of such cocktails as the <span>Brandy Daisy, Fizz, Flip, Sour</span>
+        and variations of the earliest form of mixed drink, Punch. The 1876 edition included the first written recipe
+        for the <span>Tom Collins</span>, which appeared just after The Tom Collins Hoax of 1874.</p>
+
+      <h3>The flashy "Blue Blazer Cocktail"</h3>
+      <p>Thomas developed his signature drink, the <span>Blue Blazer</span>, at the El Dorado gambling saloon in San
+        Francisco. The drink is made by lighting whiskey afire and passing it back and forth between two mixing glasses,
+        creating an arc of flame. Thomas continued to develop new drinks throughout his life. His mixing of the
+        <span>"Martinez"</span>, which recipe was published in the 1887 edition of his guide, has sometimes been viewed
+        as a precursor to the modern martini. Thomas claimed to have invented the Tom and Jerry and did much to
+        popularize it in the United States; however, the history of the drink predated him.</p>
+
+      <h3>From San Francisco to New York</h3>
+      <p>Upon returning to New York City, he became head bartender at the Metropolitan hotel. In 1866 he opened his own
+        bar again, on Broadway between 21st and 22nd Streets, which became his most famous establishment. Thomas was one
+        of the first to display the drawings of Thomas Nast. In his saloon he hung Nast's caricatures of the political
+        and theatrical figures; one notable drawing, now lost, was of Thomas "in nine tippling postures colossally." The
+        saloon included funhouse mirrors. This historic bar has been adapted for use as a Restoration Hardware store.
+      </p>
+      <p>Thomas was an active man about town, a flashy dresser who was fond of kid gloves and his gold Parisian watch.
+        He enjoyed going to bare-knuckle prize fights, and was an art collector. He enjoyed traveling. By middle age he
+        was married and had two daughters. Always a good sport, at 205 pounds he was one of the lighter members of the
+        Fat Men's Association. He had a side interest in gourds; at one point in the late 1870s, Thomas served as
+        president of The Gourd Club after producing the largest specimen.</p>
+
+      <h3>Later years, complete povery and death</h3>
+      <p>Toward the end of his life, Thomas tried speculating on Wall Street, but bad judgments rendered him broke. He
+        had to sell his successful saloon and auction off his considerable art collection; he tried opening a new bar
+        but was unable to maintain the level of popularity as his more famous location. <span>He died in New York City
+          of a stroke (apoplexy) in 1885 at the age of 55.</span> His death was marked by substantial obituaries across
+        the United States. The New York Times obituary noted that Thomas was "at one time better known to club men and
+        men about town than any other bartender in this city, and he was very popular among all classes." He is interred
+        in Woodlawn Cemetery in The Bronx, New York City.</p>
+    </article>
+
+    <article class="article__base">
+      <h3 class="article__heading">Refrences</h3>
+      <ol class="article__list">
+        <li class="article__list-item">
+          <a class="article__link" id="tribute-link" href="https://en.wikipedia.org/wiki/Jerry_Thomas_(bartender)"
+            target="_blank">Wikipedia - Jerry Thomas</a>
+        </li>
+        <li class="article__list-item">
+          <a class="article__link" id="tribute-link"
+            href="https://www.diffordsguide.com/people/51723/bartender/jerry-thomas" target="_blank">Difford's Guide -
+            Jerry Thomas</a>
+        </li>
+        <li class="article__list-item">
+          <a class="article__link" id="tribute-link" href="https://www.liquor.com/articles/jerry-thomas-125-years-later/"
+            target="_blank">Liquor.com - Jerry Thomas</a>
         </li>
       </ol>
-    </footer>
-  </body>
+    </article>
+  </main>
+  <footer class="footer__base" id="footer">
+    <nav class="navigation__base" data-js-cmp="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./personal_portfolio.html" target="_blank"
+            rel="noopener noreferrer">Home</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./survey_form.html" target="_blank" rel="noopener noreferrer">Survey
+            Form</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./product_landing_page.html" target="_blank"
+            rel="noopener noreferrer">Product Landing Page</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link" href="./technical_documentation_page.html" target="_blank"
+            rel="noopener noreferrer">Technical Documentation Page</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer__copyright">
+      <span>Developed & Design by
+        <a href="#link-of-portflio-page" class="footer__link">Paul Serban &copy; 2021</a>
+        for the 
+        <a href="https://www.freecodecamp.org/learn/responsive-web-design#responsive-web-design-projects">
+          freeCodeCamp - Responsive Web Design Certification</a></span>
+    </p>
+  </footer>
+</body>
+
 </html>

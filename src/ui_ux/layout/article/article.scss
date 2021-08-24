@@ -1,0 +1,41 @@
+@import '../../abstracts/abstracts.scss';
+
+$layout-cmp: 'article';
+
+.#{$layout-cmp} {
+  &__base {
+    margin: $basesize * 3;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: $basesize * 3;
+    padding: ($basesize * 3) ($basesize * 2);
+  }
+
+  &__list-item {
+    font-size: 1.5rem;
+    padding-right: $basesize * 3;
+    font-family: $code-font-stack;
+
+    &:not(:first-child) {
+      padding-left: $basesize * 3;
+      border-left: 1px solid $c-eerie-black;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited,
+    &:active,
+    &:focus {
+      color: $c-eerie-black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

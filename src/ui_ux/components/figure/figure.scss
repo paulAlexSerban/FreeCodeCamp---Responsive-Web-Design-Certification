@@ -4,16 +4,21 @@ $cmp: 'figure';
 
 .#{$cmp} {
   &__base {
-    max-width: 900px;
     margin: 0;
   }
 
   &__image {
+    width: 100%;
     max-width: 100%;
     display: block;
+    overflow: hidden;
   }
 
   &__caption {
-    color: red;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: $basesize * 3;
+    margin: $basesize * 3;
+    border-bottom: 1px solid $c-eerie-black;
   }
 }

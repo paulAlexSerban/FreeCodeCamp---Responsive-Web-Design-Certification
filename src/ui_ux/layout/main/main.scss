@@ -1,0 +1,15 @@
+@import '../../abstracts/abstracts.scss';
+
+$layout-cmp: 'main';
+
+.#{$layout-cmp} {
+  &__base {
+    width: 100%;
+    max-width: $max-width;
+    margin-top: $basesize * 3;
+    border-radius: $round-border;
+    overflow: hidden;
+    background-color: rgba($c-eerie-black, 0.1);
+    box-shadow: $box-shadow-dark;
+  }
+}

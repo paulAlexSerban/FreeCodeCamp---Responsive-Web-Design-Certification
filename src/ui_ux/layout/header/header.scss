@@ -4,43 +4,41 @@ $layout-cmp: 'header';
 
 .#{$layout-cmp} {
   &__base {
-    margin-top: $basesize * 9;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: $basesize * 12;
+    background-color: rgba($c-eerie-black, 0.1);
+    width: 100%;
+    max-width: $max-width;
+    border-radius: $round-border;
+    overflow: hidden;
+    box-shadow: $box-shadow-dark;
   }
 
   &__container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding: ($basesize * 2) ($basesize * 4);
   }
-  
-  &__title,
-  &__subtitle {
-    display: block;
-    text-align: center;
+
+  &__heading {
+    padding: ($basesize * 2) $basesize;
   }
 
   &__title {
-    
-  }
-
-  &__subtitle {
-    padding: 0 ($basesize * 3);
-    display: none;
-
-    @include respond(min-desktop) {
-      display: inline-block;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-style: italic;
+    font-family: $code-font-stack;
+  
+    @include respond(min-tab-port) {
+      font-size: 3rem;
+      line-height: 3.1rem;
     }
-  }
-
-  &__logo {
-    display: flex;
-    height: fit-content;
-    padding: $basesize * 1.5;
-  }
-
-  &__logo-img {
-    display: block;
-    width: 50px;
+  
+    @include respond(min-desktop) {
+      font-size: 3.8rem;
+      line-height: 3.9rem;
+    }
   }
 }

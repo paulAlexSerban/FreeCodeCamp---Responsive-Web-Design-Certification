@@ -6,19 +6,33 @@ $cmp: "admin-bar";
   &__base {
     position: fixed;
     top: 0;
-    height: 71px;
-    padding-left: 72px;
-    background-color: black;
-    width: 100%;
+    left: 0;
+    height: $basesize * 8;
+    padding: 0 7rem;
+    background-color: $color-secondary;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__description {
     display: flex;
     flex-direction: column;
+    justify-items: center;
 
     span {
       display: block;
-      color: white;
+      color: $admin-text-color;
+      font-size: 1.6rem;
     }
+  }
+
+  &__logo {
+    display: block;
+    height: 6em;
+    width: 6rem;
+    fill: $admin-text-color;
   }
 }
