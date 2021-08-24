@@ -1,6 +1,6 @@
 @import './color-list.scss';
 
-$color-primary: $c-french-sky-blue;
+$color-primary: $c-baby-blue-eyes;
 $color-primary-dark: $c-blue-crayola;
 
 $color-secondary: $c-rich-black-FOGRA-29;
@@ -15,7 +15,9 @@ $brand-color: $color-primary !default;
 /// @type Color
 $text-color: $c-eerie-black !default;
 
+$admin-text-color: $c-cultured;
+
 /// Background Color
 /// @type Color
-$color-background: $color-primary !default;
+$color-background: $c-cultured !default;
 
