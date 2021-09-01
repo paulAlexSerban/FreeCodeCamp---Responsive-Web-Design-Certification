@@ -21,11 +21,13 @@
         </div>
         <div class="header__container">
             <h1 class="header__heading" id="title">
-                <span class="header__title">"Bar Service" </span> Product Landing Page
-
+                <span class="header__title">"Bar Service" </span> 
+                <span class="header__title-description"> Product Landing Page </span>
             </h1>
+            <!-- IMAGE src has to be hosted online to pass te 'fcc-rwd' tests -->
+            <img class="header__image-logo" id="header-img" src="https://i.ibb.co/26rFdq2/fcc-rwd-logo.png" alt="responsive web design logo">
         </div>
-        <nav class="navigation__base" data-js-cmp="navigation">
+        <nav class="navigation__base" id="nav-bar" data-js-cmp="navigation">
             <ul class="navigation__list">
                 <li class="navigation__list-item">
                     <a class="navigation__link" href="./personal_portfolio.html" target="_blank"
@@ -44,9 +46,29 @@
                         rel="noopener noreferrer">Technical Documentation Page</a>
                 </li>
             </ul>
+            <ul class="navigation__list">
+                <li class="navigation__list-item">
+                    <a class="navigation__link nav-link" href="#who-are-we">Who are we</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a class="navigation__link nav-link" href="#our-services">Our services</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a class="navigation__link nav-link" href="#form">Contact Us</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <main class="main__base"></main>
+    <main class="main__base">
+        <section class="about__base" id="who-are-we">
+            <video class="video__base" src="#" id="video"></video>
+        </section>
+        <section class="panel__base" id="our-services"></section>
+        <form class="form__base" action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Let us contact you by giving us you email! :D" required>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
     <footer class="footer__base" id="footer">
         <nav class="navigation__base" data-js-cmp="navigation">
             <ul class="navigation__list">

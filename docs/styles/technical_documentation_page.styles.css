@@ -444,6 +444,7 @@ p {
 
 .navigation__base {
   display: flex;
+  flex-direction: column;
   padding: 2.4rem 1.6rem;
   background-color: rgba(31, 31, 31, 0.1);
 }
@@ -458,6 +459,9 @@ p {
     width: 100%;
     justify-content: center;
   }
+}
+.navigation__list + .navigation__list {
+  margin-top: 2rem;
 }
 .navigation__list-item {
   font-size: 1.5rem;
@@ -556,6 +560,7 @@ p {
   line-height: 2.5rem;
   font-style: italic;
   font-family: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  display: block;
 }
 @media only screen and (min-width: 56.25em) {
   .header__title {
@@ -568,4 +573,28 @@ p {
     font-size: 3.8rem;
     line-height: 3.9rem;
   }
+}
+.header__title-description {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-indent: 2rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .header__title-description {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  .header__title-description {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+.header__image-logo {
+  width: 100%;
+  max-width: 100px;
+  display: block;
+  overflow: hidden;
 }

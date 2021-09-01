@@ -11,6 +11,8 @@ $layout-cmp: 'header';
     border-radius: $round-border;
     overflow: hidden;
     box-shadow: $box-shadow-dark;
+
+
   }
 
   &__container {
@@ -30,6 +32,7 @@ $layout-cmp: 'header';
     line-height: 2.5rem;
     font-style: italic;
     font-family: $code-font-stack;
+    display: block;
   
     @include respond(min-tab-port) {
       font-size: 3rem;
@@ -40,5 +43,30 @@ $layout-cmp: 'header';
       font-size: 3.8rem;
       line-height: 3.9rem;
     }
+  }
+
+  &__title-description {
+    display: block;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-indent: 2rem;
+
+    @include respond(min-tab-port) {
+      font-size: 2rem;
+      line-height: 2.2rem;
+    }
+  
+    @include respond(min-desktop) {
+      font-size: 2.2rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__image-logo {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    overflow: hidden;
   }
 }
