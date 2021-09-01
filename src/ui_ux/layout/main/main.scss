@@ -4,8 +4,6 @@ $layout-cmp: 'main';
 
 .#{$layout-cmp} {
   &__base {
-    width: 100%;
-    max-width: $max-width;
     margin-top: $basesize * 3;
     border-radius: $round-border;
     overflow: hidden;

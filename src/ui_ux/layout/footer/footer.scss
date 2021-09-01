@@ -4,8 +4,6 @@ $layout-cmp: 'footer';
 
 .#{$layout-cmp} {
   &__base {
-    width: 100%;
-    max-width: $max-width;
     margin-top: $basesize * 4;
     background-color: rgba($c-eerie-black, 0.1);
     border-radius: $round-border;

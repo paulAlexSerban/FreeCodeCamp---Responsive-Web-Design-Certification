@@ -54,12 +54,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #eeeeee;
-  padding: 0;
-}
-@media only screen and (min-width: 56.25em) {
-  body {
-    padding: 2.4rem;
-  }
 }
 
 main {
@@ -442,6 +436,27 @@ p {
   padding: 0.8rem 1.6rem;
 }
 
+body {
+  padding: 0;
+}
+@media only screen and (min-width: 56.25em) {
+  body {
+    padding: 2.4rem;
+  }
+}
+body > * {
+  width: 100%;
+  max-width: 1180px;
+}
+
+.main__base {
+  margin-top: 2.4rem;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(31, 31, 31, 0.1);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
 .navigation__base {
   display: flex;
   flex-direction: column;
@@ -479,9 +494,32 @@ p {
   text-decoration: none;
 }
 
+.article__base {
+  margin: 2.4rem;
+}
+.article__list {
+  display: flex;
+  margin-top: 2.4rem;
+  padding: 2.4rem 1.6rem;
+}
+.article__list-item {
+  font-size: 1.5rem;
+  padding-right: 2.4rem;
+  font-family: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+}
+.article__list-item:not(:first-child) {
+  padding-left: 2.4rem;
+  border-left: 1px solid #1f1f1f;
+}
+.article__link, .article__link:link, .article__link:visited, .article__link:active, .article__link:focus {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+.article__link:hover {
+  text-decoration: none;
+}
+
 .footer__base {
-  width: 100%;
-  max-width: 1180px;
   margin-top: 3.2rem;
   background-color: rgba(31, 31, 31, 0.1);
   border-radius: 5px;
@@ -533,14 +571,30 @@ p {
   width: 6rem;
   fill: #eeeeee;
 }
+
+.description__paragraph {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 56.25em) {
+  .description__paragraph {
+    max-width: 60%;
+  }
+}
+.description__quote,
+.description__quote + span {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.description__quote + span {
+  font-weight: bold;
+}
 /*!**************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/ui_ux/layout/header/header.scss ***!
   \**************************************************************************************************************************************************************************************/
 .header__base {
   margin-top: 9.6rem;
   background-color: rgba(31, 31, 31, 0.1);
-  width: 100%;
-  max-width: 1180px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);

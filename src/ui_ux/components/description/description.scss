@@ -1,0 +1,30 @@
+@import "../../abstracts/abstracts.scss";
+
+$cmp: 'description';
+
+.#{$cmp} {
+  &__base {
+
+  }
+
+  &__paragraph {
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include respond(min-tab-port) {
+      max-width: 60%;
+    }
+  }
+
+  &__quote {
+    &,
+    + span {
+      font-size: 1.5rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    + span {
+      font-weight: bold;
+    }
+  }
+}

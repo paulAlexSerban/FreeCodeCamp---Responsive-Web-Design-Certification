@@ -1,0 +1,12 @@
+body {
+  padding: 0;
+
+  @include respond(min-tab-port) {
+    padding: $basesize * 3;
+  }
+  
+  > * {
+    width: 100%;
+    max-width: $max-width;
+  }
+}

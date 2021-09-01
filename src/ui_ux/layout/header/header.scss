@@ -6,13 +6,9 @@ $layout-cmp: 'header';
   &__base {
     margin-top: $basesize * 12;
     background-color: rgba($c-eerie-black, 0.1);
-    width: 100%;
-    max-width: $max-width;
     border-radius: $round-border;
     overflow: hidden;
     box-shadow: $box-shadow-dark;
-
-
   }
 
   &__container {

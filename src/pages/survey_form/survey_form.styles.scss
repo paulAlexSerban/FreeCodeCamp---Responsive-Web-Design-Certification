@@ -1,6 +1,11 @@
 @import '../../ui_ux/main.scss';
 
+@import '../../ui_ux/pages/basepage.scss';
+
+@import '../../ui_ux/layout/main/main.scss';
 @import '../../ui_ux/layout/navigation/navigation.scss';
+@import '../../ui_ux/layout/article/article.scss';
 @import '../../ui_ux/layout/footer/footer.scss';
 
 @import '../../ui_ux/components/admin-bar/admin-bar.scss';
+@import '../../ui_ux/components/description/description.scss';

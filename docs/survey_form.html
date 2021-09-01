@@ -49,63 +49,86 @@
     </nav>
   </header>
   <main class="main__base">
-    <section class="section__base">
-      <p class="section__description" id="description">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos facere, aperiam atque delectus distinctio
-        blanditiis a possimus consectetur minima ut dolorem ea illo veniam molestiae. Eligendi laborum necessitatibus
-        repellendus!
+    <section class="description__base">
+      <p class="description__paragraph">
+        <q class="description__quote">The chief reason for drinking is the desire to behave in a certain way, and to be
+          able to blame it on alcohol.</q> - <span> Mignon McLaughlin </span> </p>
+      <p class="description__paragraph" id="description">
+        This is our survey through which we will know which are the mixed drinks that you fancy and tastes you wish to
+        discover in your cocktail. Please Complete it as thorough as you can.
       </p>
     </section>
     <form class="form__base" id="survey-form" action="">
-      <label for="name" id="name-label"> Name: </label>
-      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <div class="form__section">
+        <label for="name" id="name-label"> Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
 
-      <label for="email" id="email-label"> Email: </label>
-      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label for="email" id="email-label"> Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
 
-      <label for="number" id="number-label"> Number: </label>
-      <input type="number" name="number" id="number" placeholder="Add your phone number" required min="1" max="10">
-
-      <label for="option">Select drink type:</label>
-      <select name="" id="dropdown">
-        <option value="highball">Highball</option>
-        <option value="rocks"></option>
-        <option value="neat"></option>
-        <option value="spritz"></option>
-        <option value="sour"></option>
-        <option value="cocktail"></option>
-      </select>
-
-      <p>Please select your preferred contact method:</p>
-      <div>
-        <input type="radio" id="contactChoice1" name="contact" value="email">
-        <label for="contactChoice1">Email</label>
-
-        <input type="radio" id="contactChoice2" name="contact" value="phone">
-        <label for="contactChoice2">Phone</label>
-
-        <input type="radio" id="contactChoice3" name="contact" value="mail">
-        <label for="contactChoice3">Mail</label>
+        <label for="number" id="number-label"> Number: </label>
+        <input type="number" name="number" id="number" placeholder="Add your phone number" required min="1" max="10">
       </div>
 
-      <p>Choose your drinks's features:</p>
+      <fieldset class="form__section">
+        <label for="drink-type">Select drink type:
+          <select name="drink-type" id="dropdown">
+            <option value="highball">Highball</option>
+            <option value="rocks"></option>
+            <option value="neat"></option>
+            <option value="spritz"></option>
+            <option value="sour"></option>
+            <option value="cocktail"></option>
+          </select>
+        </label>
 
-      <div>
-        <input type="checkbox" id="sweet_&_sour" name="sweet & sour" value="sweet & sour" checked>
-        <label for="scales">Sweet & Sour</label>
-      </div>
+        <label>Choose your drinks's features:
+          <select name="drink-features" id="drink-features">
+            <option value="sweet-sour">Sweet & Sour</option>
+            <option value="bitter">Bitter</option>
+          </select>
+        </label>
+      </fieldset>
 
-      <div>
-        <input type="checkbox" id="bitter" name="bitter" value="bitter">
-        <label for="bitter">Bitter</label>
-      </div>
+      <fieldset>
+        <p>How important is it to know that all the ingredients in a cocktail are prepared fresh?</p>
+        <label for="not-important">Not Important</label>
+        <input type="radio" id="not-important" name="not-important" value="not-important">
 
-      <div>
-        <input type="checkbox" id="sparkling" name="sparkling" value="sparkling">
-        <label for="sparkling">Sparkling</label>
-      </div>
+        <label for="mostly-not-important">Mostly Not Important</label>
+        <input type="radio" id="mostly-not-important" name="mostly-not-important" value="mostly-not-important">
+
+        <label for="somewhat-important">Not Important</label>
+        <input type="radio" id="somewhat-important" name="somewhat-important" value="somewhat-important">
+
+        <label for="important">Important</label>
+        <input type="radio" id="important" name="important" value="important">
+
+        <label for="very-important">Very Important</label>
+        <input type="radio" id="very-important" name="very-important" value="very-important">
+
+      </fieldset>
+
+      <fieldset>
+        <p>Please select your preferred contact method:</p>
+
+        
+        <label for="email">Email
+          <input type="checkbox" id="email" name="email" value="email" checked>
+        </label>
+
+        
+        <label for="sms">SMS
+          <input type="checkbox" id="sms" name="sms" value="sms">
+        </label>
+
+       
+        <label for="phone">Phone
+          <input type="checkbox" id="phone" name="phone" value="phone">
+        </label>
+      </fieldset>
 
       <textarea name="observations" id="observations" cols="30" rows="10"></textarea>
 
