@@ -15,8 +15,6 @@ uninstall-npm:
 uninstall: uninstall-npm
 	sudo rm -rf ./docs/*
 
-
-
 watch:
 	@while inotifywait -re modify --exclude "./build" ${SOURCE_DIR}; do \
 		cd ${SOURCE_DIR} && npm run build; \

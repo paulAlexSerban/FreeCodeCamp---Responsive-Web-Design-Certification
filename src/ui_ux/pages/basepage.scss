@@ -9,4 +9,8 @@ body {
     width: 100%;
     max-width: $max-width;
   }
+
+  &.active-burger-navigation {
+    overflow: hidden;
+  }
 }

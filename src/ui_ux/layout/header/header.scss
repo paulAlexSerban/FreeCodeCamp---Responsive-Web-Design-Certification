@@ -4,11 +4,15 @@ $layout-cmp: 'header';
 
 .#{$layout-cmp} {
   &__base {
-    margin-top: $basesize * 12;
+    margin-top: $basesize * 15;
     background-color: rgba($c-eerie-black, 0.1);
     border-radius: $round-border;
     overflow: hidden;
     box-shadow: $box-shadow-dark;
+
+    @include respond(min-tab-port) {
+      margin-top: $basesize * 12;
+    }
   }
 
   &__container {
@@ -16,7 +20,12 @@ $layout-cmp: 'header';
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: ($basesize * 2) ($basesize * 4);
+    padding: ($basesize * 2) 0;
+    
+    @include respond(min-tab-port) {
+      padding-top: $basesize * 4;
+      padding-right: $basesize * 4;
+    }
   }
 
   &__heading {
@@ -24,14 +33,14 @@ $layout-cmp: 'header';
   }
 
   &__title {
-    font-size: 2.2rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
+    line-height: 3.4rem;
     font-style: italic;
     font-family: $code-font-stack;
     display: block;
   
     @include respond(min-tab-port) {
-      font-size: 3rem;
+      font-size: 3.4rem;
       line-height: 3.1rem;
     }
   
@@ -64,5 +73,6 @@ $layout-cmp: 'header';
     max-width: 100px;
     display: block;
     overflow: hidden;
+    margin-right: 2.5rem;
   }
 }

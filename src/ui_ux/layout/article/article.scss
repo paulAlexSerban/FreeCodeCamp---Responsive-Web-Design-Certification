@@ -11,6 +11,11 @@ $layout-cmp: 'article';
     display: flex;
     margin-top: $basesize * 3;
     padding: ($basesize * 3) ($basesize * 2);
+    flex-direction: column;
+
+    @include respond(min-tab-port) {
+      flex-direction: row;
+    }
   }
 
   &__list-item {
@@ -19,8 +24,10 @@ $layout-cmp: 'article';
     font-family: $code-font-stack;
 
     &:not(:first-child) {
-      padding-left: $basesize * 3;
-      border-left: 1px solid $c-eerie-black;
+      @include respond(min-tab-port) {
+        padding-left: $basesize * 3;
+        border-left: 1px solid $c-eerie-black;
+      }
     }
   }
 

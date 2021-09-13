@@ -1,5 +1,9 @@
 body {
-    padding: 0; 
+  padding: 0;
+
+  &.active-burger-navigation {
+    overflow: hidden;
+  }
 
   .header__base {
     margin-top: 0;

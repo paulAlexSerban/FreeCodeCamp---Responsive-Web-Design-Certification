@@ -6,34 +6,137 @@ $layout-cmp: "navigation";
   &__base {
     display: flex;
     flex-direction: column;
-    padding: ($basesize * 3) ($basesize * 2);
     background-color: rgba($c-eerie-black, 0.1);
+    position: relative;
+    transition: height .3s;
+
+    @include respond(min-tab-port) {
+      padding: ($basesize * 3) ($basesize * 2);
+    }
+
+    &--top {
+      position: fixed;
+      top: 6.4rem;
+      background-color: rgba($c-eerie-black, 0.8);
+      width: 100vw;
+      min-height: 5rem;
+      height: 5rem;
+
+      @include respond(min-tab-port) { 
+        position: static;
+        background-color: rgba($c-eerie-black, 0.1);
+      }
+    }
+
+    &.active {
+      top: 6.4rem;
+      z-index: 100;
+      height: 100vh;
+    }
+  }
+
+  &__toggle {
+    display: block;
+    position: absolute;
+    margin-top: 1.5rem;
+    right: 2.5rem;
+    color:#fff;
+    cursor: pointer;
+    transition: background-position .3s;
+
+    @include respond(min-tab-port) {
+      display: none;
+    }
+  }
+
+  &__toggle-line-1,
+  &__toggle-line-2,
+  &__toggle-line-3 {
+    background-color:#fff;
+    width: 2.5rem;
+    height: 3px;
+    display: block;
+    position: relative;
+    opacity: 1.0;
+    border-radius: 15%;
+    transition: all .3s;
+  }
+
+  &__toggle-line-2,
+  &__toggle-line-3 {
+    margin-top: .5rem;
+  }
+
+
+  &__toggle-line-1 {
+    &.active {
+      transform: rotate(270deg);
+      opacity:0.0;
+      top:5px;
+    }
+  }
+
+  &__toggle-line-2 {
+    &.active {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__toggle-line-3 {
+    &.active {
+      transform: rotate(-45deg);
+      top:-7px;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     list-style: none;
+    height: 0;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 
     @include respond(min-tab-port) {
       flex-direction: row;
       width: 100%;
       justify-content: center;
+      height: 100%;
+      opacity: 1;
     }
 
     + .#{$layout-cmp}__list {
       margin-top: 2rem;
     }
+
+    .active & {
+      display: flex;
+      height: 100vh;
+      opacity: 1;
+    }
   }
 
   &__list-item {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     padding-right: $basesize * 3;
     font-family: $code-font-stack;
+    line-height: 4rem;
+    font-weight: bold;
+
+    @include respond(min-tab-port) {
+      font-size: 1.5rem;
+      line-height: normal;
+      font-weight: lighter
+    }
 
     &:not(:first-child) {
       padding-left: $basesize * 3;
-      border-left: 1px solid $c-eerie-black;
+
+      @include respond(min-tab-port) {
+        border-left: 1px solid $c-eerie-black;
+      }
     }
   }
 
@@ -43,7 +146,11 @@ $layout-cmp: "navigation";
     &:visited,
     &:active,
     &:focus {
-      color: $c-eerie-black;
+      color: $c-white;
+
+      @include respond(min-tab-port) {
+        color: $c-eerie-black;
+      }
     }
 
     &:hover {

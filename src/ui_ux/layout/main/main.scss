@@ -8,6 +8,9 @@ $layout-cmp: 'main';
     border-radius: $round-border;
     overflow: hidden;
     background-color: rgba($c-eerie-black, 0.1);
-    box-shadow: $box-shadow-dark;
+    
+    @include respond(min-tab-port) {
+      box-shadow: $box-shadow-dark;
+    }
   }
 }

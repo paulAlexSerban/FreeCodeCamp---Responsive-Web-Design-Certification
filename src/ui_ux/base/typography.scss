@@ -41,18 +41,18 @@ h2 {
 
 h3 {
   margin-top: $basesize * 1.5;
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  font-weight: normal;
 
   @include respond(min-tab-port) {
-    font-size: 2.2rem;
-    line-height: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
   }
 
   @include respond(min-desktop) {
-    font-size: 2.4rem;
-    line-height: 2.6rem;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
   }
 }
 
