@@ -1,9 +1,32 @@
 version: '3'
 
-services: 
-    nodejs_febuild:
-        # takes the source fils from `./src`, compiles to browser ready files and puts the compiled files in `./dist`
-    nodejs_backend:
-        # takes files from `./dist` and serves them to the cleint browser
-    # mongodb_database:
-        # to be used as database for emails, comments and whatever is needsd if need
+networks:
+  nginx-proxy_apache:
+    driver: bridge
+
+services:
+  # nginx web proxy  
+  proxy:
+    image: nginx:${NGINX_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: ./config/nginx/nginx.Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME}__nginx
+    restart: always
+    ports:
+      - ${NGINX_PORT}:80 # expose 80 on host and sent to 80 in container
+    networks:
+      - nginx-proxy_apache
+
+  # apache web server     
+  web:
+    image: httpd:${APACHE_VERSION:-latest}
+    build:  
+      context: .
+      dockerfile: ./config/httpd/httpd.Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME}__apache
+    restart: always
+    volumes:
+      - ${DIST_DOCS_DIR}:/usr/local/apache2/htdocs/
+    networks:
+      - nginx-proxy_apache
