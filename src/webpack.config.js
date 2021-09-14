@@ -41,10 +41,6 @@ module.exports = {
     path: path.resolve(__dirname, "./build"),
     assetModuleFilename: 'assets/[name][ext]'
   },
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()],
-  },
   mode: "development",
   module: {
     rules: [
@@ -103,7 +99,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     ...htmlWebpackPluginPages,
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProgressPlugin(),
     new HtmlWebpackInlineSVGPlugin({
       inlineAll: true
     })

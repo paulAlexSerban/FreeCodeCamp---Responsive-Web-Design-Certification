@@ -17,6 +17,6 @@ uninstall: uninstall-npm
 
 watch:
 	@while inotifywait -re modify --exclude "./build" ${SOURCE_DIR}; do \
-		cd ${SOURCE_DIR} && npm run build; \
-  	cd .. && rsync -rv --exclude-from='./config/watchexclude' ${SOURCE_DIR}/build/* ${DIST_DOCS_DIR} --info=progress2; \
+		cd ${SOURCE_DIR} && npm run watch; \
+  	cd .. && rsync -r --exclude-from='./config/watchexclude' ${SOURCE_DIR}/build/* ${DIST_DOCS_DIR} --info=progress2; \
 	done

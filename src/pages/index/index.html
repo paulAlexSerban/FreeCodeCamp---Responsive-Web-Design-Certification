@@ -9,39 +9,88 @@
   <title>fcc - Personal Portfolio</title>
 </head>
 
-<body class="personal-portfolio" id="body">
-  <header class="header__base" id="welcome-section" data-js-cmp="header">
-    <h1 class="header__heading" id="title">
-      <span class="header__title">Paul Serban </span>
-      <span class="header__title-description"> Front-End Software Engineer </span>
-    </h1>
-    <p>in this section should be a short catch presentational wand welcoming text</p>
-  </header>
+<body class="personal-portfolio is-preload" id="body">
+
+  <!-- Navbar -->
+
   <nav class="navigation__base" id="navbar" data-js-cmp="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__list-item">
-        <a class="navigation__link nav-link" href="#who-am-i">Who am I</a>
-      </li>
-      <li class="navigation__list-item">
-        <a class="navigation__link nav-link" href="#my-services">My services</a>
-      </li>
-      <li class="navigation__list-item">
-        <a class="navigation__link nav-link" href="#project">Projects & Work</a>
-      </li>
-      <li class="navigation__list-item">
-        <a class="navigation__link nav-link" href="#form">Contact Me</a>
-      </li>
-      <li class="navigation__list-item">
-        <a class="navigation__link" id="profile-link" href="https://github.com/paulAlexSerban" target="_blank">GitHub</a>
-      </li>
-    </ul>
+
+    <div class="navigation__container">
+      <span class="navigation__toggle">
+        <span class="navigation__toggle-line-1"></span>
+        <span class="navigation__toggle-line-2"></span>
+        <span class="navigation__toggle-line-3"></span>
+      </span>
+
+      <h2 class="navigation__heading">Menu</h2>
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__link nav-link" href="#who-am-i">Who am I</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link nav-link" href="#my-services">What I do</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link nav-link" href="#project">Projects & Work</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__link nav-link" href="#form">Contact Me</a>
+        </li>
+        <!-- next `li` and `#profile-link` is needed to pass the FreeCodeCamp certification tests-->
+        <li class="navigation__list-item">
+          <a class="navigation__link" id="profile-link" href="https://github.com/paulAlexSerban" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <main class="main__base">
-    <section class="about__base" id="who-am-I">
+
+  <!-- Header -->
+  <header class="header__base" id="welcome-section" data-js-cmp="header">
+    <img src="../../assets/icons/banner-background.svg" alt="">
+
+        <!-- Banner -->
+    <section class="banner__base">
+      <div class="banner__container inner">
+        <h1 class="banner__heading" id="title">
+          <span class="banner__title">Paul Serban</span>
+          <span class="banner__description">Front-End Software Engineer </span>
+          <span class="banner__description">JavaScript - ReactJS</span>
+          <span class="banner__description">WordPress - AEM</span>
+        </h1>
+      </div>
+      <a href="#who-am-i" class="banner__find-more scrolly">
+        <span class="banner__find-more-text">Find Out More</span>
+        <img class="banner__find-more-class" src="../../assets/icons/chevron-thin-down.svg" alt="arrow - find more about me">
+      </a>
     </section>
-    section
+
+  </header>
+  <main class="main__base">
+    <!-- About-->
+    <section class="about__base" id="who-am-i">
+      <h2>Who am I</h2>
+      <div class="about__content">
+        <p class="about__text">Ambitious, determined, and curious Front-end Web Developer, productivity orientated, innovative, and creative JavaScript Software Engineer specialized in ReactJS, with hands-on experience in hardware and software technologies, and with an inquisitive insight daredevil attitude to discover more about technology and tackle problems on the fly in an Agile managed environment.</p>
+        <p class="about-text">I am always eager to get my hands dirty putting to work tech skills and problem-solving abilities while developing new abilities and getting my skillset more proficient. I never say no to a challenge and I am always ready to develop the solution as per the client’s expectations.
+          Web Development Proficiency</p>
+      </div>
+      <div>
+        <a href="#">Studies and Certifications</a>
+        <a href="#">Work Experience</a>
+      </div>
+    </section>
+
+    <!-- Services section-->
+    <section class="panel__base" id="my-services">
+      <h2>What I do</h2>
+    </section>
+
+
     <section class="gallery__base" id="projects">this will be the project gallery section
-      <h2 class="gallery__heading">Projects</h2>
+      <h2 class="gallery__heading">
+        <span>What I did</span>
+        <span>Projects & Work</span>
+      </h2>
       <ul class="gallery__list">
         <li class="gallery__list-item">
           <h3 class="gallery__project-title project-tile">Product Landing Page</h3>
@@ -61,7 +110,7 @@
         </li>
       </ul>
     </section>
-    <section class="panel__base" id="my-services"></section>
+    
 
     <form class="form__base" action="https://www.freecodecamp.com/email-submit" id="form">
       <input type="email" name="email" id="email" placeholder="Let us contact you by giving us you email! :D" required>
@@ -69,26 +118,36 @@
     </form>
   </main>
   <footer class="footer__base" id="footer">
-    <nav class="navigation__base" data-js-cmp="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list-item">
-          <a class="navigation__link" href="./personal_portfolio.html" target="_blank"
-            rel="noopener noreferrer">Home</a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__link" href="./tribute_page.html" target="_blank" rel="noopener noreferrer">Tribute
-            Page</a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__link" href="./survey_form.html" target="_blank" rel="noopener noreferrer">Survey
-            Form</a>
-        </li>
-        <li class="navigation__list-item">
-          <a class="navigation__link" href="./technical_documentation_page.html" target="_blank"
-            rel="noopener noreferrer">Technical Documentation Page</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="footer__container">
+      <div class="social-media__base">
+        <ul class="social-media__list">
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#linkedin">LinkedIn</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#github">GitHub</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#codepen">CodePen</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#freecodecamp">FreeCodeCamp</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#hackerrank">HackerRank</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#hackthebox">Hack The Box</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#tryhackme">Try Hack Me</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#email">Email</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <p class="footer__copyright">
       <span>Developed & Design by
         <a href="#link-of-portflio-page" class="footer__link">Paul Serban &copy; 2021</a>

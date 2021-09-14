@@ -1,6 +1,8 @@
 @import '../../ui_ux/main.scss';
 
-@import '../../ui_ux/pages/basepage.scss';
+// TODO merge together pages with thames where possible using css variables;
+@import '../../ui_ux/pages/basepage/basepage.scss';
+@import '../../ui_ux/themes/basepage.scss';
 
 // @import NON JS Components
 @import '../../ui_ux/layout/main/main.scss';

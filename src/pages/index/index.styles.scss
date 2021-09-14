@@ -1,8 +1,9 @@
 @import '../../ui_ux/main.scss';
 
-@import '../../ui_ux/layout/navigation/navigation.scss';
+// TODO merge together pages with thames where possible using css variables;
+@import '../../ui_ux/themes/portfolio.scss';
+
 @import '../../ui_ux/layout/footer/footer.scss';
 
 @import '../../ui_ux/components/admin-bar/admin-bar.scss';
-
-@import '../../ui_ux/pages/portfolio.scss';
+@import '../../ui_ux/components/banner/banner.scss';

@@ -5,13 +5,26 @@ $layout-cmp: 'header';
 .#{$layout-cmp} {
   &__base {
     margin-top: $basesize * 15;
-    background-color: rgba($c-eerie-black, 0.1);
-    border-radius: $round-border;
+    background-color: var(--header-background-color);
     overflow: hidden;
     box-shadow: $box-shadow-dark;
+    width: var(--header-width);
+    transition: filter .6s ease-in-out;
+    height: 100vh;
 
     @include respond(min-tab-port) {
       margin-top: $basesize * 12;
+    }
+
+    > svg {
+      position: absolute;
+      width: 100%;
+      height : 100%;
+      stroke: rgba(255, 255, 255, 0.1);
+    }
+
+    body.is-navigation-visible & {
+      filter: blur(5px);
     }
   }
 

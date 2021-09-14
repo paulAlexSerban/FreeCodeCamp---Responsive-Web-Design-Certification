@@ -10,10 +10,8 @@ const navigationStructure = () => {
     setupDOMReferences() {
       this.body = document.querySelector('#body');
       this.mobileToggle = document.querySelector(
-        ".navigation__base--top .navigation__toggle"
+        ".navigation__base .navigation__toggle"
       );
-      this.menuIcon = this.mobileToggle.children;
-      this.menu = document.querySelectorAll(".navigation__link");
     }
 
     setupEvents() {
@@ -21,12 +19,7 @@ const navigationStructure = () => {
     }
 
     navToggle() {
-      this.body.classList.toggle("active-burger-navigation");
-      this.element.classList.toggle("active");
-
-      for (let i = 0; i < this.menuIcon.length; i++) {
-        this.menuIcon[i].classList.toggle("active");
-      }
+      this.body.classList.toggle('is-navigation-visible');
     }
 
     init() {
@@ -36,7 +29,7 @@ const navigationStructure = () => {
   }
 
   document
-    .querySelectorAll('[data-js-cmp="navigation header"]')
+    .querySelectorAll('[data-js-cmp="navigation"]')
     .forEach((el) => {
       new Navigation(el);
     });

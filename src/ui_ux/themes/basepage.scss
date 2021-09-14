@@ -1,0 +1,19 @@
+@import '../abstracts/abstracts.scss';
+
+.basepage {
+  .navigation__base {
+    --navigation-top-position: 6.4rem;
+    --navigation-position-tab: static;
+    --background-color: rgba($c-eerie-black, 0.8);
+
+    @include respond(min-tab-port) {
+      --background-color: rgba($c-eerie-black, 0.1);
+    }
+    
+  }
+
+  .header__base {
+    --header-background-color: rgba($c-eerie-black, 0.1);
+    --header-width: auto;
+  }
+}

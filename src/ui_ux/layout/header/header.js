@@ -12,10 +12,7 @@ const headerStructure = () => {
 		}
 	}
 
-	document.querySelectorAll('[data-js-cmp="header"]').forEach(el => {
-			new Header(el)
-		}
-	)
+
 }
 
 export default headerStructure;
