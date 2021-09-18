@@ -1,18 +1,13 @@
 @import "../../abstracts/abstracts.scss";
 
-$cmp: "banner";
+$block: "banner";
 
-.#{$cmp} {
-  &__base,
-  &__container,
-  &__heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.#{$block} {
+  @include e('base', 'container', 'heading') {
+    @include flex($direction: column);
   }
 
-  &__base {
+  @include e('base') {
   cursor: default;
   height: 100vh;
   min-height: 35rem;
@@ -27,41 +22,37 @@ $cmp: "banner";
     }
   }
 
-  &__heading {
+  @include e('heading') {
     width:fit-content;
     color: $c-cultured;
   }
 
-  &__title {
+  @include e('title') {
+    @include relative($z-index: banner__title);
+
     transform: scale(1);
     transition: transform 0.5s ease, opacity 0.5s ease;
     display: inline-block;
     font-size: 4.75rem;
     opacity: 1;
     padding: 2rem 2.5rem;
-    position: relative;
-    z-index: 1;
     margin-bottom: 2rem;
 
     &:before, &:after {
+      @include pseudo();
       transition: width 0.85s ease;
       transition-delay: 0.25s;
       background: $c-cultured;
-      content: '';
-      display: block;
       height: 2px;
-      position: absolute;
       width: 100%;
     }
 
     &:before {
-      top: 0;
-      left: 0;
+      @include absolute($top: 0, $left: 0);
     }
 
     &:after {
-      bottom: 0;
-      right: 0;
+      @include absolute($right: 0, $bottom: 0);
     }
 
     body.is-preload & {
@@ -75,7 +66,7 @@ $cmp: "banner";
   }
 
 
-  &__description {
+  @include e('description') {
     font-size: 2rem;
     font-weight: lighter;
     letter-spacing: 0.225rem;
@@ -93,32 +84,27 @@ $cmp: "banner";
     }
   }
 
-  &__find-more {
+  @include e('find-more') {
     &,
     &:link,
     &:visited,
     &:active,
     &:focus {
+      @include absolute($bottom: 5%, $left: 50%, $z-index: banner__find-more);
+      @include flex($main: flex-end, $direction: column);
+
+      transform: translate(-50%, 0);
       transition: all 0.75s ease-in-out;
       transition-delay: 1s;
-      bottom: 5%;
       color: inherit;
       font-size: 1.8rem;
-      left: 50%;
       letter-spacing: 0.3rem;
       opacity: 1;
-      position: absolute;
       text-align: center;
       text-transform: uppercase;
       width: 20rem;
       height: 20rem;
-      z-index: 1;
-      transform: translate(-50%, 0);
       color: $c-cultured;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: flex-end;
       text-decoration: none;
   
       body.is-preload & {
@@ -139,17 +125,15 @@ $cmp: "banner";
   }
 
   &:after {
+    @include absolute($top: 0, $left: 0);
+    @include pseudo();
+
     pointer-events: none;
     transition: opacity 3s ease-in-out;
     transition-delay: 1.25s;
-    content: '';
     background: #2e3842;
-    display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
     opacity: 0;
   }
 }

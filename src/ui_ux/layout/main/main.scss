@@ -1,16 +1,13 @@
 @import '../../abstracts/abstracts.scss';
 
-$layout-cmp: 'main';
+$block: 'main';
 
-.#{$layout-cmp} {
-  &__base {
-    margin-top: $basesize * 3;
-    border-radius: $round-border;
+.#{$block} {
+  @include e('base'){
+    @include flex($direction: column);
+
+    width: 100vw;
+    max-width: 100%;
     overflow: hidden;
-    background-color: rgba($c-eerie-black, 0.1);
-    
-    @include respond(min-tab-port) {
-      box-shadow: $box-shadow-dark;
-    }
   }
 }

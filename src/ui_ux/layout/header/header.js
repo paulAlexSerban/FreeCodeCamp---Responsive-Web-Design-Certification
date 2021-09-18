@@ -1,18 +1,9 @@
-import './header.scss';
+export class Header {
+  constructor(element) {
+    this.init();
+  }
 
-const headerStructure = () => {
-	class Header {
-		constructor(element) {
-			this.element = element;
-			this.init()
-		}
-	
-		init() {
-			console.log("class Header - is loaded", this.element);
-		}
-	}
-
-
+  init() {
+    console.log("class Header - is loaded");
+  }
 }
-
-export default headerStructure;

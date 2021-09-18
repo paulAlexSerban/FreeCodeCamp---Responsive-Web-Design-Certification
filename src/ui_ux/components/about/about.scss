@@ -1,0 +1,72 @@
+@import "../../abstracts/abstracts.scss";
+
+$block: "about";
+
+.#{$block} {
+  @include e('base') {
+    @include flex();
+
+    width: 100%;
+    background-color: #3d9b93;
+    color: $c-cultured;
+    padding: 6rem 0 4rem 0;
+  }
+
+  @include e('container') {
+
+  }
+
+  @include e('media') {
+
+  }
+
+  @include e('content') {
+    @include respond(min-tab-port) {
+      max-width: $max-width;
+    }
+  }
+
+  @include e('heading') {
+    @include flex($direction: column);
+    margin-top: 0;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    padding-bottom: 1rem;
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    span:first-child {
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      font-sizing: 3.5rem;
+    }
+
+    span:last-child {
+      font-weight: 100;
+      font-size: 1.8rem;
+    }
+  }
+
+  @include e('body') {
+
+  }
+
+  @include e('text') {
+    text-indent: 3rem;
+  }
+
+  @include e('extras-list') {
+
+  }
+
+  @include e('extras-item') {
+
+  }
+
+
+  @include e('extras-link') {
+    
+  }
+}

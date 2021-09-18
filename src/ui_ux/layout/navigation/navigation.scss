@@ -1,20 +1,15 @@
 @import "../../abstracts/abstracts.scss";
 
-$layout-cmp: "navigation";
+$block: "navigation";
 
-.#{$layout-cmp} {
-  &__base {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: fixed;
-    top: 0;
-    right: -80%;
+.#{$block} {
+  @include e('base') {
+    @include fixed($top: 0, $right: -100%, $z-index:navigation__base);
+    @include flex($cross: flex-end, $direction: column);
+
     height: 100%;
     -webkit-overflow-scrolling: touch;
-    z-index: 2;
-    transition: all 0.6s ease-in-out;
-    width: 100%;
+    transition: all $ease-in-out-6;
 
     body.is-navigation-visible & {
         right: 0;
@@ -25,14 +20,15 @@ $layout-cmp: "navigation";
     }
   }
 
-  &__container {
+  @include e('container') {
+    @include relative();
+
     width: 80rem;
     max-width: 80%;
     padding-left: 0;
-    transition: all 0.6s ease-in-out;
+    transition: opacity $ease-in-out-6, padding $ease-in-out-6;
     height: 100%;
-    background-color: rgb(73, 73, 73);
-    position: relative;
+    background-color: var(--overlaid-background-color);
 
     body.is-navigation-visible & {
       opacity: 1;
@@ -44,12 +40,11 @@ $layout-cmp: "navigation";
     }
   }
 
-  &__heading,
-  &__list {
-    color: white;
+  @include e('heading', 'list') {
+    color: var(--overlaid-text-color);
   }
 
-  &__heading {
+  @include e('heading') {
     margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 1rem;
@@ -67,13 +62,10 @@ $layout-cmp: "navigation";
     }
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+  @include e('list') {
+    @include flex($main: flex-start, $cross: flex-start, $direction: column);
 
-    justify-content: flex-start;
-    align-items: flex-start;
+    list-style: none;
     opacity: 0;
     font-size: 2.4rem;
     padding-top: 7rem;
@@ -84,21 +76,21 @@ $layout-cmp: "navigation";
     }
   }
 
-  &__list-item {
+  @include e('list-item') {
     width: 100%;
 
     &:not(:last-child) {
-      border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+      border-bottom: var(--navigation-border-bottom);
     }
   }
 
-  &__link {
+  @include e('link') {
     &,
     &:link,
     &:visited,
     &:active,
     &:focus {
-      color: $c-white;
+      color: var(--overlaid-text-color);
       padding: 4rem 0;
       display: block;
       font-weight: lighter;
@@ -109,25 +101,28 @@ $layout-cmp: "navigation";
       text-decoration: none;
     }
 
-    .navigation__list-item:hover & {
+    .#{$block}__list-item:hover & {
       color: rgb(255, 176, 147);
     }
   }
 
 
-  &__toggle {
+  @include e('toggle') {
+    @include absolute($top: 3rem, $left: -50%);
+
     display: block;
-    position: absolute;
     margin-top: 1.5rem;
-    left: -20%;
-    top: 3rem;
     color: #fff;
     cursor: pointer;
-    transition: background-position 0.3s;
+    transition: all 0.6s;
     outline: none;
 
     @include respond(min-tab-port) {
       display: none;
+    }
+
+    body.is-navigation-visible & {
+      @include absolute($top: 3rem, $left: -15%);
     }
 
     &::selection {
@@ -135,42 +130,42 @@ $layout-cmp: "navigation";
     }
   }
 
-  &__toggle-line-1,
-  &__toggle-line-2,
-  &__toggle-line-3 {
+  @include e('toggle-line-1', 'toggle-line-2', 'toggle-line-3' ) {
+    @include relative();
+
     background-color: #fff;
     width: 3rem;
     height: 3px;
     display: block;
-    position: relative;
     opacity: 1;
     border-radius: 15%;
     transition: all 0.3s;
   }
 
-  &__toggle-line-2,
-  &__toggle-line-3 {
+  @include e('toggle-line-2', 'toggle-line-3' ) {
     margin-top: 8px;
   }
 
-  &__toggle-line-1 {
-   body.is-navigation-visible & {
+  @include e('toggle-line-1') {
+    body.is-navigation-visible & {
+      @include relative($top: 5px);
+
       transform: rotate(270deg);
       opacity: 0;
-      top: 5px;
     }
   }
 
-  &__toggle-line-2 {
+  @include e('toggle-line-2')  {
     body.is-navigation-visible & {
       transform: rotate(45deg);
     }
   }
 
-  &__toggle-line-3 {
+  @include e('toggle-line-3')  {
     body.is-navigation-visible &  {
+      @include relative($top: -10px);
+
       transform: rotate(-45deg);
-      top: -10px;
     }
   }
 }

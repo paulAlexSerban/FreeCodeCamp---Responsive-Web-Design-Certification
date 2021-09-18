@@ -1,38 +1,29 @@
 @import '../../abstracts/abstracts.scss';
 
-$layout-cmp: 'header';
+$block: 'header';
 
-.#{$layout-cmp} {
-  &__base {
-    margin-top: $basesize * 15;
+.#{$block} {
+  @include e('base') {
+    margin-top: var(--header-margin-top);
     background-color: var(--header-background-color);
     overflow: hidden;
-    box-shadow: $box-shadow-dark;
+    // box-shadow: var(--header-box-shadow);
     width: var(--header-width);
-    transition: filter .6s ease-in-out;
-    height: 100vh;
-
-    @include respond(min-tab-port) {
-      margin-top: $basesize * 12;
-    }
+    transition: filter $ease-in-out-6;
+    height: var(--header-height);
 
     > svg {
-      position: absolute;
+      @include absolute();
+
       width: 100%;
       height : 100%;
-      stroke: rgba(255, 255, 255, 0.1);
-    }
-
-    body.is-navigation-visible & {
-      filter: blur(5px);
+      stroke: $c-white-10;
     }
   }
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  @include e('container') {
+    @include flex();
+
     padding: ($basesize * 2) 0;
     
     @include respond(min-tab-port) {
@@ -41,11 +32,11 @@ $layout-cmp: 'header';
     }
   }
 
-  &__heading {
+  @include e('heading') {
     padding: ($basesize * 2) $basesize;
   }
 
-  &__title {
+  @include e('title') {
     font-size: 3rem;
     line-height: 3.4rem;
     font-style: italic;
@@ -63,7 +54,7 @@ $layout-cmp: 'header';
     }
   }
 
-  &__title-description {
+  @include e('title-description') {
     display: block;
 
     font-size: 1.6rem;
@@ -81,7 +72,7 @@ $layout-cmp: 'header';
     }
   }
 
-  &__image-logo {
+  @include e('image-logo') {
     width: 100%;
     max-width: 100px;
     display: block;

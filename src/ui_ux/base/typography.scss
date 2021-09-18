@@ -1,7 +1,7 @@
 @import '../abstracts/abstracts.scss';
 
 body {
-  color: $text-color;
+  color: var(--text-color);
   font-family: $text-font-stack;
   font-weight: normal;
 }
@@ -57,11 +57,11 @@ h3 {
 }
 
 a {
-  color: $text-color;
+  color: var(--text-color);
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
+    color: var(--text-color);
     text-decoration: underline;
   }
 }
@@ -70,4 +70,5 @@ p {
   margin-top: $basesize;
   font-size: 1.6rem;
   padding: $basesize ($basesize * 2);
+  line-height: 1.8rem;
 }

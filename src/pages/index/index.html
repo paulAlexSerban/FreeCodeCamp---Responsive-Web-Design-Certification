@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script defer
+    src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
   <title>fcc - Personal Portfolio</title>
 </head>
 
@@ -31,24 +33,58 @@
           <a class="navigation__link nav-link" href="#my-services">What I do</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link nav-link" href="#project">Projects & Work</a>
+          <a class="navigation__link nav-link" href="#project">Projects &
+            Work</a>
         </li>
         <li class="navigation__list-item">
           <a class="navigation__link nav-link" href="#form">Contact Me</a>
         </li>
         <!-- next `li` and `#profile-link` is needed to pass the FreeCodeCamp certification tests-->
         <li class="navigation__list-item">
-          <a class="navigation__link" id="profile-link" href="https://github.com/paulAlexSerban" target="_blank">GitHub</a>
+          <a class="navigation__link" id="profile-link"
+            href="https://github.com/paulAlexSerban" target="_blank">GitHub</a>
         </li>
       </ul>
+
+      <div class="social-media__base">
+        <ul class="social-media__list">
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#resume">Resume</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#linkedin">LinkedIn</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#github">GitHub</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#codepen">CodePen</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#freecodecamp">FreeCodeCamp</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#hackerrank">HackerRank</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#hackthebox">Hack The Box</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#tryhackme">Try Hack Me</a>
+          </li>
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#email">Email</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header class="header__base" id="welcome-section" data-js-cmp="header">
-    <img src="../../assets/icons/banner-background.svg" alt="">
+    <img src="../../assets/icons/portfolio/banner-background.svg" alt="">
 
-        <!-- Banner -->
+    <!-- Banner -->
     <section class="banner__base">
       <div class="banner__container inner">
         <h1 class="banner__heading" id="title">
@@ -60,60 +96,193 @@
       </div>
       <a href="#who-am-i" class="banner__find-more scrolly">
         <span class="banner__find-more-text">Find Out More</span>
-        <img class="banner__find-more-class" src="../../assets/icons/chevron-thin-down.svg" alt="arrow - find more about me">
+        <img class="banner__find-more-class"
+          src="../../assets/icons/portfolio/chevron-thin-down.svg"
+          alt="arrow - find more about me">
       </a>
     </section>
 
   </header>
   <main class="main__base">
     <!-- About-->
-    <section class="about__base" id="who-am-i">
-      <h2>Who am I</h2>
-      <div class="about__content">
-        <p class="about__text">Ambitious, determined, and curious Front-end Web Developer, productivity orientated, innovative, and creative JavaScript Software Engineer specialized in ReactJS, with hands-on experience in hardware and software technologies, and with an inquisitive insight daredevil attitude to discover more about technology and tackle problems on the fly in an Agile managed environment.</p>
-        <p class="about-text">I am always eager to get my hands dirty putting to work tech skills and problem-solving abilities while developing new abilities and getting my skillset more proficient. I never say no to a challenge and I am always ready to develop the solution as per the client’s expectations.
-          Web Development Proficiency</p>
+    <article class="about__base" id="who-am-i">
+      <div class="about__media" hidden>
+        <img class="about__image" src="#my-face" alt="Paul Serban photo">
       </div>
-      <div>
-        <a href="#">Studies and Certifications</a>
-        <a href="#">Work Experience</a>
-      </div>
-    </section>
+      <section class="about__content">
+        <h2 class="about__heading">
+          <span>Who am I</span>
+          <span>Allow me to introduce myself</span>
+        </h2>
+        <div class="about__body">
+          <p class="about__text">Ambitious, determined, and curious Front-end
+            Web Developer, productivity orientated,
+            innovative, and creative JavaScript Software Engineer specialized in
+            ReactJS, with hands-on experience in
+            hardware and software technologies, and with an inquisitive insight
+            daredevil attitude to discover more
+            about technology and tackle problems on the fly in an Agile managed
+            environment.</p>
+          <p class="about__text">Always eager to get my hands dirty putting to
+            work tech skills and
+            problem-solving abilities while developing new abilities and getting
+            my skillset more proficient. I never
+            say no to a challenge and I am always ready to develop the solution
+            as per the client’s expectations.
+            Web Development Proficiency</p>
+        </div>
+        <ul class="about__extras-list" hidden>
+          <li class="about__extras-item">
+            <a class="about__extras-link" href="#cta-resume-modal">View my
+              resume</a>
+
+          </li>
+          <li class="about__extras-item">
+            <a class="about__extras-link" href="#cta-studies-modal">Studies and
+              Certifications</a>
+
+          </li>
+          <li class="about__extras-item">
+            <a class="about__extras-link" href="#cta-work-modal">Work
+              Experience</a>
+          </li>
+        </ul>
+      </section>
+    </article>
 
     <!-- Services section-->
-    <section class="panel__base" id="my-services">
-      <h2>What I do</h2>
-    </section>
+    <article class="services__base" id="my-services">
+
+      <h2 class="services__heading">
+        <span>Look What I Can Do</span>
+        <span>My goal is to build fast, mobile-first websites that look great
+          on any screen, are accessible and
+          clearly communicates with the visitors</span>
+      </h2>
+      <div class="services__container">
+        <section class="services__section">
+          <img class="services__icon"
+          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
+          alt="tools svg">
+          <h3 class="services__section-title">Web Development</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <div class="services__content">
+                <h4 class="services__item-heading">Responsiveness and
+                  Accessibility</h4>
+                  <p>Develop project prototypes by translating the design of the project into a fully functional web application ready to go through UI/UX refinement.</p>
+                <p>Following Responsive Web Design best practices together with
+                  Mobile-first and Progressive-enhancement strategies and semantic accessibility.</p>
+
+              </div>
+            </li>
+            <li class="services__list-item">
+
+              <div class="services__content">
+                <h4 class="services__item-heading">Wordpress Development</h4>
+                <p>Use Php to develop and structure from custom theme and plugin
+                  to implementation and administration as
+                  per the desired use.</p>
+                <p>Follow the best practices of Web Performances and SEO in
+                  order to improve the ranking and reach of te
+                  website.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="services__section">
+          <img class="services__icon"
+          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
+          alt="tools svg">
+          <h3 class="services__section-title">Software Engineering</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <h4 class="services__item-heading">Focused on JavaScript and ReactJS</h4>
+              <p>Use JavaScript frameworks, such as ReactJS, to develop Single
+                Page Applications.</p>
+            </li>
+            <li class="services__list-item">
+              <h4 class="services__item-heading">Language agnostic in multiple languages</h4>
+              <p>Develop and implement programming logic with Php, Python,
+                and Java applying Functional, Procedural and Object Oriented Programming paradigms.</p>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="services__section">
+          <img class="services__icon"
+          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
+          alt="tools svg">
+          <h3 class="services__section-title">Project Architecture</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <h4 class="services__item-heading">Project architecture and lead</h4>
+              <p>Architect well documented, easy to maintain and scalable
+                projects.</p>
+                <p>Craft code following component-based development strategies, consistent CSS design patterns and
+                architectures, file naming systems such as BEM and 7-in1 Architecture, structure the makeup according to the Atomic Design principles.</p>
+            </li>
+            <li class="services__list-item">
+              <h4 class="services__item-heading">Build systems</h4>
+              <p>Configure build systems and local development environment
+                instances using Shell, Bash, Make, and Docker
+                scripts</p>
+              <p>Configure project Front-end build architecture using tools such
+                as NodeJS, Npm, Webpack, Gulp, Grunt,
+                SASS/SCSS, PostCSS, and Babel</p>
+            </li>
+            <li class="services__list-item">
+              <h4 class="services__item-heading">Team work and collaborative development</h4>
+              <p>Collaborate in distributed and agile teams, manage time,
+                establish priorities, and delegate effectively
+                using distributed version control management tools such as Git
+                and advanced distributed version-control
+                system concepts to manage code, share work, and collaborate with
+                other developers</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </article>
 
 
-    <section class="gallery__base" id="projects">this will be the project gallery section
+    <article class="gallery__base" id="projects">
       <h2 class="gallery__heading">
         <span>What I did</span>
         <span>Projects & Work</span>
       </h2>
       <ul class="gallery__list">
         <li class="gallery__list-item">
-          <h3 class="gallery__project-title project-tile">Product Landing Page</h3>
-          <a class="gallery__link" href="./product_landing_page.html target=" _blank" rel="noopener noreferrer">Product
+          <h3 class="gallery__project-title project-tile">Product Landing Page
+          </h3>
+          <a class="gallery__link" href="./product_landing_page.html target="
+            _blank" rel="noopener noreferrer">Product
             Landing Page</a>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./tribute_page.html" target="_blank" rel="noopener noreferrer">Tribute Page</a>
+          <a class="gallery__link" href="./tribute_page.html" target="_blank"
+            rel="noopener noreferrer">Tribute Page</a>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./survey_form.html" target="_blank" rel="noopener noreferrer">Survey
+          <a class="gallery__link" href="./survey_form.html" target="_blank"
+            rel="noopener noreferrer">Survey
             Form</a>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./technical_documentation_page.html" target="_blank"
-            rel="noopener noreferrer">Technical Documentation Page</a>
+          <a class="gallery__link" href="./technical_documentation_page.html"
+            target="_blank" rel="noopener noreferrer">Technical Documentation
+            Page</a>
         </li>
       </ul>
-    </section>
-    
+    </article>
 
-    <form class="form__base" action="https://www.freecodecamp.com/email-submit" id="form">
-      <input type="email" name="email" id="email" placeholder="Let us contact you by giving us you email! :D" required>
+
+    <form class="form__base" action="https://www.freecodecamp.com/email-submit"
+      id="form">
+      <input type="email" name="email" id="email"
+        placeholder="Let us contact you by giving us you email! :D" required>
       <input type="submit" value="Submit" id="submit">
     </form>
   </main>
@@ -121,6 +290,9 @@
     <div class="footer__container">
       <div class="social-media__base">
         <ul class="social-media__list">
+          <li class="social-media__list-item">
+            <a class="social-media__link" href="#resume">Resume</a>
+          </li>
           <li class="social-media__list-item">
             <a class="social-media__link" href="#linkedin">LinkedIn</a>
           </li>
@@ -150,12 +322,30 @@
     </div>
     <p class="footer__copyright">
       <span>Developed & Design by
-        <a href="#link-of-portflio-page" class="footer__link">Paul Serban &copy; 2021</a>
+        <a href="#link-of-portflio-page" class="footer__link">Paul Serban &copy;
+          2021</a>
         for the
-        <a href="https://www.freecodecamp.org/learn/responsive-web-design#responsive-web-design-projects">
-          freeCodeCamp - Responsive Web Design Certification</a></span>
+        <a
+          href="https://www.freecodecamp.org/learn/responsive-web-design#responsive-web-design-projects">
+          freeCodeCamp - Responsive Web Design Certification</a>
+      </span> | <span hidden>Old site (to be visible only starting from version
+        2)</span>
     </p>
   </footer>
+  <div class="modals__base" hidden>
+    <div class="modal__base" id="cta-resume-modal">
+      here will the resume available to read in html
+      <a href="#download-resume" class="button">Download my resume</a>
+    </div>
+    <div class="modal__base" id="cta-studies">
+      here all my studies and certification will be listed
+      <a href="#link-to-porjects-by-certificatin-gallery"></a>
+    </div>
+    <div class="modal__base" id="work-experience">
+      here I will list y professional experience and jobs that I've had
+      <a href="#link-to-linked-in"></a>
+    </div>
+  </div>
 </body>
 
 </html>

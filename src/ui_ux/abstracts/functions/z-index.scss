@@ -1,0 +1,11 @@
+$z-i:
+  base,
+  banner__title,
+  banner__find-more,
+  navigation__base;
+
+@function z-index($element, $list: $z-i) {
+  $index: index($list, $element);
+
+  @return $index;
+}

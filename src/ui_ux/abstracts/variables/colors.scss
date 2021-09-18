@@ -1,23 +1,23 @@
-@import './color-list.scss';
+/// COLORS
+$c-white:                         #fff;
+$c-white-10:                      rgba($c-white, 0.1);
+$c-white-40:                      rgba($c-white, 0.4);
 
-$color-primary: $c-baby-blue-eyes;
-$color-primary-dark: $c-blue-crayola;
+$c-cultured:                      #eeeeee;
+$c-pumice:                        $c-cultured;
+$c-battleship-grey:               #888888;
+$c-davys-grey:                    #494949;
+$c-eerie-black:                   #1f1f1f;
+$c-rich-black-FOGRA-29:           #101d2c;
+$c-black:                         #000;
 
-$color-secondary: $c-rich-black-FOGRA-29;
+$c-black-30:                      rgba($c-black, 0.30);
 
+$c-alice-blue:                    #e1f1ff;
+$c-baby-blue-eyes:                #9dd1ff;
+$c-french-sky-blue:               #60a9ff;
+$c-blue-jeans:                    #48aaff;
+$c-dodger-blue:                   #348efe;
+$c-blue-crayola:                  #016ff9;
 
-
-/// Main brand color
-/// @type Color
-$brand-color: $color-primary !default;
-
-/// Copy text color
-/// @type Color
-$text-color: $c-eerie-black !default;
-
-$admin-text-color: $c-cultured;
-
-/// Background Color
-/// @type Color
-$color-background: $c-cultured !default;
-
+$c-rhythm:                        #7c7b9c;

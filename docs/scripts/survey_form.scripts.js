@@ -10,23 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./pages/index/index.entry.js":
-/*!************************************!*\
-  !*** ./pages/index/index.entry.js ***!
-  \************************************/
+/***/ "./pages/survey_form/survey_form.entry.js":
+/*!************************************************!*\
+  !*** ./pages/survey_form/survey_form.entry.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ui_ux_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ui_ux/main.scss */ \"./ui_ux/main.scss\");\n/* harmony import */ var _ui_ux_pages_portfolio_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../ui_ux/pages/portfolio.scss */ \"./ui_ux/pages/portfolio.scss\");\n/* harmony import */ var _ui_ux_layout_main_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui_ux/layout/main/main.scss */ \"./ui_ux/layout/main/main.scss\");\n/* harmony import */ var _ui_ux_layout_header_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui_ux/layout/header/header.scss */ \"./ui_ux/layout/header/header.scss\");\n/* harmony import */ var _ui_ux_layout_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui_ux/layout/navigation/navigation.scss */ \"./ui_ux/layout/navigation/navigation.scss\");\n/* harmony import */ var _ui_ux_layout_footer_footer_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui_ux/layout/footer/footer.scss */ \"./ui_ux/layout/footer/footer.scss\");\n/* harmony import */ var _ui_ux_components_banner_banner_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui_ux/components/banner/banner.scss */ \"./ui_ux/components/banner/banner.scss\");\n/* harmony import */ var _ui_ux_components_about_about_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui_ux/components/about/about.scss */ \"./ui_ux/components/about/about.scss\");\n/* harmony import */ var _ui_ux_components_services_service_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ui_ux/components/services/service.scss */ \"./ui_ux/components/services/service.scss\");\n/* harmony import */ var _ui_ux_layout_header_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../ui_ux/layout/header/header */ \"./ui_ux/layout/header/header.js\");\n/* harmony import */ var _ui_ux_layout_navigation_navigation__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../ui_ux/layout/navigation/navigation */ \"./ui_ux/layout/navigation/navigation.js\");\n/* harmony import */ var _ui_ux_abstracts_utils_isPreload__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../ui_ux/abstracts/utils/isPreload */ \"./ui_ux/abstracts/utils/isPreload.js\");\n// SCSS Imports specific styles\n\n\n\n\n\n\n\n\n // JS Components Imports\n\n\n\nnew _ui_ux_layout_header_header__WEBPACK_IMPORTED_MODULE_9__.Header();\nnew _ui_ux_layout_navigation_navigation__WEBPACK_IMPORTED_MODULE_10__.Navigation(); // JS Functions Imports\n\n\n(0,_ui_ux_abstracts_utils_isPreload__WEBPACK_IMPORTED_MODULE_11__.isPreload)();\n\n//# sourceURL=webpack://fcc-responsive_web_design/./pages/index/index.entry.js?");
-
-/***/ }),
-
-/***/ "./ui_ux/abstracts/utils/isPreload.js":
-/*!********************************************!*\
-  !*** ./ui_ux/abstracts/utils/isPreload.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"isPreload\": () => (/* binding */ isPreload)\n/* harmony export */ });\nvar isPreload = function isPreload() {\n  window.addEventListener(\"load\", function () {\n    window.setTimeout(function () {\n      document.querySelector(\"body\").classList.remove(\"is-preload\");\n    }, 300);\n  });\n};\n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/abstracts/utils/isPreload.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _survey_form_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./survey_form.styles.scss */ \"./pages/survey_form/survey_form.styles.scss\");\n/* harmony import */ var _ui_ux_layout_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../ui_ux/layout/header/header */ \"./ui_ux/layout/header/header.js\");\n // JS and STRUCTURE / LAYOUT\n\n\nnew _ui_ux_layout_header_header__WEBPACK_IMPORTED_MODULE_1__.default();\nconsole.log('hello tribute survey form');\n\n//# sourceURL=webpack://fcc-responsive_web_design/./pages/survey_form/survey_form.entry.js?");
 
 /***/ }),
 
@@ -36,17 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Header\": () => (/* binding */ Header)\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Header = /*#__PURE__*/function () {\n  function Header(element) {\n    _classCallCheck(this, Header);\n\n    this.init();\n  }\n\n  _createClass(Header, [{\n    key: \"init\",\n    value: function init() {\n      console.log(\"class Header - is loaded\");\n    }\n  }]);\n\n  return Header;\n}();\n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/header/header.js?");
-
-/***/ }),
-
-/***/ "./ui_ux/layout/navigation/navigation.js":
-/*!***********************************************!*\
-  !*** ./ui_ux/layout/navigation/navigation.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Navigation\": () => (/* binding */ Navigation)\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Navigation = /*#__PURE__*/function () {\n  function Navigation(element) {\n    _classCallCheck(this, Navigation);\n\n    this.init();\n  }\n\n  _createClass(Navigation, [{\n    key: \"setupDOMReferences\",\n    value: function setupDOMReferences() {\n      this.body = document.querySelector(\"#body\");\n      this.navigationBase = document.querySelector('.navigation__base');\n      this.navigationContainer = document.querySelector('.navigation__container');\n      this.mobileToggle = document.querySelector(\".navigation__base .navigation__toggle\");\n    }\n  }, {\n    key: \"setupEvents\",\n    value: function setupEvents() {\n      var _this = this;\n\n      this.mobileToggle.addEventListener(\"click\", function () {\n        return _this.navToggle();\n      });\n      this.navigationBase.addEventListener(\"click\", function (e) {\n        if (e.target === _this.navigationBase) {\n          _this.navToggle();\n        }\n      });\n    }\n  }, {\n    key: \"navToggle\",\n    value: function navToggle() {\n      this.body.classList.toggle(\"is-navigation-visible\");\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      this.setupDOMReferences();\n      this.setupEvents();\n    }\n  }]);\n\n  return Navigation;\n}();\n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/navigation/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.scss */ \"./ui_ux/layout/header/header.scss\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nvar headerStructure = function headerStructure() {\n  var Header = /*#__PURE__*/function () {\n    function Header(element) {\n      _classCallCheck(this, Header);\n\n      this.element = element;\n      this.init();\n    }\n\n    _createClass(Header, [{\n      key: \"init\",\n      value: function init() {\n        console.log(\"class Header - is loaded\", this.element);\n      }\n    }]);\n\n    return Header;\n  }();\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerStructure);\n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/header/header.js?");
 
 /***/ }),
 
@@ -70,43 +50,13 @@ eval("\n\n/* eslint-disable */\nfunction normalizeUrl(pathComponents) {\n  retur
 
 /***/ }),
 
-/***/ "./ui_ux/components/about/about.scss":
-/*!*******************************************!*\
-  !*** ./ui_ux/components/about/about.scss ***!
-  \*******************************************/
+/***/ "./pages/survey_form/survey_form.styles.scss":
+/*!***************************************************!*\
+  !*** ./pages/survey_form/survey_form.styles.scss ***!
+  \***************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734831\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/components/about/about.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/components/banner/banner.scss":
-/*!*********************************************!*\
-  !*** ./ui_ux/components/banner/banner.scss ***!
-  \*********************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734800\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/components/banner/banner.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/components/services/service.scss":
-/*!************************************************!*\
-  !*** ./ui_ux/components/services/service.scss ***!
-  \************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734846\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/components/services/service.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/layout/footer/footer.scss":
-/*!*****************************************!*\
-  !*** ./ui_ux/layout/footer/footer.scss ***!
-  \*****************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734776\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/footer/footer.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631707776351\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./pages/survey_form/survey_form.styles.scss?");
 
 /***/ }),
 
@@ -116,47 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*****************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734788\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/header/header.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/layout/main/main.scss":
-/*!*************************************!*\
-  !*** ./ui_ux/layout/main/main.scss ***!
-  \*************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734750\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/main/main.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/layout/navigation/navigation.scss":
-/*!*************************************************!*\
-  !*** ./ui_ux/layout/navigation/navigation.scss ***!
-  \*************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734820\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/navigation/navigation.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/main.scss":
-/*!*************************!*\
-  !*** ./ui_ux/main.scss ***!
-  \*************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734733\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/main.scss?");
-
-/***/ }),
-
-/***/ "./ui_ux/pages/portfolio.scss":
-/*!************************************!*\
-  !*** ./ui_ux/pages/portfolio.scss ***!
-  \************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631889734763\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/pages/portfolio.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1631707776416\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://fcc-responsive_web_design/./ui_ux/layout/header/header.scss?");
 
 /***/ })
 
@@ -237,12 +147,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("survey_form." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2058323747dada41337d")
+/******/ 		__webpack_require__.h = () => ("bdefab5b5aaffe8731cf")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -813,7 +723,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			"index": 0
+/******/ 			"survey_form": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1323,7 +1233,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__("./pages/index/index.entry.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./pages/survey_form/survey_form.entry.js");
 /******/ 	
 /******/ })()
 ;
