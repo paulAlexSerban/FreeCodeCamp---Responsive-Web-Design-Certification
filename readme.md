@@ -42,3 +42,10 @@
 
   ### Details
 | Google Lighthouse scores | Accessibility scores | HTML validation | CSS validation
+
+## Build steps
+### Software requirements
+* Node v16
+* Docker and Docker Compose
+### Commands
+* run `make install` in the project directory

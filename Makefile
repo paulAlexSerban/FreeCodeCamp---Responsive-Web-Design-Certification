@@ -15,7 +15,7 @@ uninstall-npm:
 uninstall: uninstall-npm
 	sudo rm -rf ./docs/*
 
-watch:
+watch-linux:
 	@while inotifywait -re modify --exclude "./build" ${SOURCE_DIR}; do \
 		cd ${SOURCE_DIR} && npm run watch; \
   	cd .. && rsync -r --exclude-from='./config/watchexclude' ${SOURCE_DIR}/build/* ${DIST_DOCS_DIR} --info=progress2; \
