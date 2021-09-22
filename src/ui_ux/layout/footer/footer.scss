@@ -1,24 +1,20 @@
 @import '../../abstracts/abstracts.scss';
 
-$layout-cmp: 'footer';
+$block: 'footer';
 
-.#{$layout-cmp} {
-  &__base {
-    margin-top: $basesize * 4;
-    background-color: rgba($c-eerie-black, 0.1);
+.#{$block} {
+  @include e('base') {
+    background-color: var(--overlaid-background-color);
     overflow: hidden;
     box-shadow: $box-shadow-dark;
-
-    @include respond(min-tab-port) {
-      border-radius: $round-border;
-    }
+    width: 100vw;
   }
 
-  &__title {
+  @include e('title') {
     margin: $basesize * 3;
   }
 
-  &__copyright {
+  @include e('copyright') {
     text-align: right;
     color: $c-davys-grey;
     margin-bottom: $basesize;

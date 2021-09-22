@@ -1,3 +1,5 @@
+import { debounce } from '../../abstracts/utils/debounce';
+
 export class Navigation {
   constructor(element) {
     this.init();
@@ -12,19 +14,20 @@ export class Navigation {
 
   setupEvents() {
     this.mobileToggle.addEventListener("click", () => this.navToggle());
-    this.navigationBase.addEventListener("click", e => {
-      if(e.target === this.navigationBase) {
-        this.navToggle();
-      }
-    })
+    document.addEventListener('scroll', debounce(this.storeScroll), { passive: true});
   }
 
   navToggle() {
     this.body.classList.toggle("is-navigation-visible");
   }
 
+  storeScroll() {
+    document.documentElement.dataset.scroll = window.scrollY;
+  }
+
   init() {
     this.setupDOMReferences();
     this.setupEvents();
+    this.storeScroll();
   }
 }

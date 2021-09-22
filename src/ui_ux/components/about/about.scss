@@ -30,31 +30,50 @@ $block: "about";
     @include flex($direction: column);
     margin-top: 0;
     border-bottom: solid 2px rgba(0, 0, 0, 0.125);
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     span {
       display: block;
       text-align: center;
-    }
-
-    span:first-child {
       text-transform: uppercase;
       letter-spacing: 1rem;
       font-sizing: 3.5rem;
     }
-
-    span:last-child {
-      font-weight: 100;
-      font-size: 1.8rem;
-    }
   }
 
   @include e('body') {
+    display: grid;
+    padding: 0 3rem;
 
+    @include respond(min-mobile) {
+      padding:0 10rem;
+    }
+
+    @include respond(min-tab-port) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 6rem;
+    }
+  }
+
+  @include e('description') {
+    @include flex($direction: column, $main: flex-start);
+
+    margin-top: 3rem;
+  }
+  
+  @include e('icon') {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
   }
 
   @include e('text') {
-    text-indent: 3rem;
+    text-align: center;
+    letter-spacing: 0.06rem;
+    line-height: 2.5rem;
   }
 
   @include e('extras-list') {

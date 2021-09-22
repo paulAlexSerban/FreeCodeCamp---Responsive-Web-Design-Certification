@@ -16,25 +16,23 @@
   <!-- Navbar -->
 
   <nav class="navigation__base" id="navbar" data-js-cmp="navigation">
-
+    <span class="navigation__toggle">
+      <span class="navigation__toggle-line-1"></span>
+      <span class="navigation__toggle-line-2"></span>
+      <span class="navigation__toggle-line-3"></span>
+    </span>
     <div class="navigation__container">
-      <span class="navigation__toggle">
-        <span class="navigation__toggle-line-1"></span>
-        <span class="navigation__toggle-line-2"></span>
-        <span class="navigation__toggle-line-3"></span>
-      </span>
-
       <h2 class="navigation__heading">Menu</h2>
       <ul class="navigation__list">
         <li class="navigation__list-item">
           <a class="navigation__link nav-link" href="#who-am-i">Who am I</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link nav-link" href="#my-services">What I do</a>
+          <a class="navigation__link nav-link" href="#my-services">What I can
+            do</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__link nav-link" href="#project">Projects &
-            Work</a>
+          <a class="navigation__link nav-link" href="#project">Work I did</a>
         </li>
         <li class="navigation__list-item">
           <a class="navigation__link nav-link" href="#form">Contact Me</a>
@@ -112,24 +110,35 @@
       <section class="about__content">
         <h2 class="about__heading">
           <span>Who am I</span>
-          <span>Allow me to introduce myself</span>
         </h2>
         <div class="about__body">
-          <p class="about__text">Ambitious, determined, and curious Front-end
-            Web Developer, productivity orientated,
-            innovative, and creative JavaScript Software Engineer specialized in
-            ReactJS, with hands-on experience in
-            hardware and software technologies, and with an inquisitive insight
-            daredevil attitude to discover more
-            about technology and tackle problems on the fly in an Agile managed
-            environment.</p>
-          <p class="about__text">Always eager to get my hands dirty putting to
-            work tech skills and
-            problem-solving abilities while developing new abilities and getting
-            my skillset more proficient. I never
-            say no to a challenge and I am always ready to develop the solution
-            as per the client’s expectations.
-            Web Development Proficiency</p>
+          <div class="about__description">
+            <img src="../../assets/icons/portfolio/person.svg" alt=""
+              class="about__icon">
+            <p class="about__text">Determined and curious Front-end
+              Web Developer, productivity orientated and innovative Software
+              Engineer specialized in JavaScript with a strong desire to learn
+              and
+              create.
+            </p>
+          </div>
+          <div class="about__description">
+            <img src="../../assets/icons/portfolio/graduation-cap.svg" alt=""
+              class="about__icon">
+            <p class="about__text">
+              Firm believer in life long learning and hands-on experience, and
+              with an inquisitive insight daredevil attitude to discover and
+              tackle problems on the fly.
+            </p>
+          </div>
+          <div class="about__description">
+            <img src="../../assets/icons/portfolio/bulb.svg" alt=""
+              class="about__icon">
+            <p class="about__text">Always eager to get my hands dirty putting to
+              work tech skills and problem-solving abilities while developing
+              the solution as per the client’s expectations.
+            </p>
+          </div>
         </div>
         <ul class="about__extras-list" hidden>
           <li class="about__extras-item">
@@ -155,92 +164,112 @@
 
       <h2 class="services__heading">
         <span>Look What I Can Do</span>
-        <span>My goal is to build fast, mobile-first websites that look great
-          on any screen, are accessible and
-          clearly communicates with the visitors</span>
       </h2>
       <div class="services__container">
         <section class="services__section">
-          <img class="services__icon"
-          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
-          alt="tools svg">
-          <h3 class="services__section-title">Web Development</h3>
+          <div class="services__icon-wrapper">
+            <img src="../../assets/icons/portfolio/responsive.svg" alt=""
+              class="services__icon">
+          </div>
+          <h3 class="services__section-title">Responsive Web Development</h3>
           <ul class="services__list">
             <li class="services__list-item">
-              <div class="services__content">
-                <h4 class="services__item-heading">Responsiveness and
-                  Accessibility</h4>
-                  <p>Develop project prototypes by translating the design of the project into a fully functional web application ready to go through UI/UX refinement.</p>
-                <p>Following Responsive Web Design best practices together with
-                  Mobile-first and Progressive-enhancement strategies and semantic accessibility.</p>
-
-              </div>
+              <p>Responsive Web Design and Mobile-First approaches for web
+                applications that look great on any screen.</p>
             </li>
             <li class="services__list-item">
-
-              <div class="services__content">
-                <h4 class="services__item-heading">Wordpress Development</h4>
-                <p>Use Php to develop and structure from custom theme and plugin
-                  to implementation and administration as
-                  per the desired use.</p>
-                <p>Follow the best practices of Web Performances and SEO in
-                  order to improve the ranking and reach of te
-                  website.</p>
-              </div>
+              <p>Web Accessibility and Performance for fast websites that
+                clearly communicates with
+                the visitors.</p>
             </li>
           </ul>
         </section>
 
         <section class="services__section">
-          <img class="services__icon"
-          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
-          alt="tools svg">
+          <div class="services__icon-wrapper">
+            <img src="../../assets/icons/portfolio/wordpress-logo.svg" alt=""
+              class="services__icon">
+          </div>
+          <h3 class="services__section-title">Wordpress Development</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <p>Develop, structure and configure custom Wordpress themes and
+                plugins with Php.</p>
+            </li>
+            <li class="services__list-item">
+              <p> Implement the latest Search Engine Optimization practices for
+                a highly ranked website and easy top reach.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="services__section">
+          <div class="services__icon-wrapper">
+            <img class="services__icon icon__javascript"
+              src="../../assets/icons/portfolio/javascript-logo.svg" alt="">
+          </div>
+
+          <h3 class="services__section-title">JavaScript Web Development</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <p>Add interactivity to websites leveraging JavaScript.</p>
+            </li>
+
+            <li class="services__list-item">
+              <p>Configure Front-end Build Systems and local development
+                environment instances using Docker, Shell, NodeJS and Webpack.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="services__section">
+          <div class="services__icon-wrapper">
+            <img src="../../assets/icons/portfolio/react-logo.svg" alt=""
+              class="services__icon">
+          </div>
+
+          <h3 class="services__section-title">ReactJS Engineering</h3>
+          <ul class="services__list">
+            <li class="services__list-item">
+              <p>Craft modern Single Page Applications and user interfaces with
+                ReactJS and Redux.</p>
+            </li>
+
+
+          </ul>
+        </section>
+        <section class="services__section">
+          <div class="services__icon-wrapper">
+            <img src="../../assets/icons/portfolio/code-brackets.svg" alt=""
+              class="services__icon">
+          </div>
           <h3 class="services__section-title">Software Engineering</h3>
           <ul class="services__list">
             <li class="services__list-item">
-              <h4 class="services__item-heading">Focused on JavaScript and ReactJS</h4>
-              <p>Use JavaScript frameworks, such as ReactJS, to develop Single
-                Page Applications.</p>
+              <p>Language agnostic in multiple languages such as Php, Python,
+                and Java.</p>
             </li>
             <li class="services__list-item">
-              <h4 class="services__item-heading">Language agnostic in multiple languages</h4>
-              <p>Develop and implement programming logic with Php, Python,
-                and Java applying Functional, Procedural and Object Oriented Programming paradigms.</p>
+              <p>Use Functional, Procedural and Object Oriented Programming
+                paradigms to implement programming logic.</p>
             </li>
-
           </ul>
         </section>
-
         <section class="services__section">
-          <img class="services__icon"
-          src="../../assets/icons/portfolio/pen-ruller-tools.svg"
-          alt="tools svg">
+          <div class="services__icon-wrapper">
+            <img src="../../assets/icons/portfolio/construction.svg" alt=""
+              class="services__icon">
+          </div>
           <h3 class="services__section-title">Project Architecture</h3>
           <ul class="services__list">
             <li class="services__list-item">
-              <h4 class="services__item-heading">Project architecture and lead</h4>
               <p>Architect well documented, easy to maintain and scalable
                 projects.</p>
-                <p>Craft code following component-based development strategies, consistent CSS design patterns and
-                architectures, file naming systems such as BEM and 7-in1 Architecture, structure the makeup according to the Atomic Design principles.</p>
             </li>
             <li class="services__list-item">
-              <h4 class="services__item-heading">Build systems</h4>
-              <p>Configure build systems and local development environment
-                instances using Shell, Bash, Make, and Docker
-                scripts</p>
-              <p>Configure project Front-end build architecture using tools such
-                as NodeJS, Npm, Webpack, Gulp, Grunt,
-                SASS/SCSS, PostCSS, and Babel</p>
-            </li>
-            <li class="services__list-item">
-              <h4 class="services__item-heading">Team work and collaborative development</h4>
-              <p>Collaborate in distributed and agile teams, manage time,
-                establish priorities, and delegate effectively
-                using distributed version control management tools such as Git
-                and advanced distributed version-control
-                system concepts to manage code, share work, and collaborate with
-                other developers</p>
+              <p>Craft code following component-based development strategies
+                together with the Atomic Design principles.</p>
             </li>
           </ul>
         </section>
@@ -248,43 +277,197 @@
     </article>
 
 
-    <article class="gallery__base" id="projects">
+    <article class="gallery__base" id="projects" data-js-cmp="gallery">
       <h2 class="gallery__heading">
-        <span>What I did</span>
-        <span>Projects & Work</span>
+        <span>Work I did</span>
       </h2>
       <ul class="gallery__list">
         <li class="gallery__list-item">
-          <h3 class="gallery__project-title project-tile">Product Landing Page
-          </h3>
-          <a class="gallery__link" href="./product_landing_page.html target="
-            _blank" rel="noopener noreferrer">Product
-            Landing Page</a>
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./tribute_page.html" target="_blank"
-            rel="noopener noreferrer">Tribute Page</a>
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./survey_form.html" target="_blank"
-            rel="noopener noreferrer">Survey
-            Form</a>
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
         </li>
         <li class="gallery__list-item">
-          <a class="gallery__link" href="./technical_documentation_page.html"
-            target="_blank" rel="noopener noreferrer">Technical Documentation
-            Page</a>
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
         </li>
+        <li class="gallery__list-item">
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
+        </li>
+        <li class="gallery__list-item">
+          <div class="gallery__card-front">
+            <div class="gallery__image-wrapper">
+              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+            </div>
+            <h3 class="gallery__project-heading">
+              <span class="gallery__project-title">Hiccup Water</span>
+              <span class="gallery__project-type">Product Landing Page</span> 
+            </h3>
+            <ul class="gallery__tech-list">
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+              <li class="gallery__tech-item-wrapper">
+                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
+              </li>
+            </ul>
+          </div>
+          <div class="gallery__card-back">
+            <a class="gallery__link" href="./product_landing_page.html" target="
+            _blank" rel="noopener noreferrer">LIVE</a>
+          </div>
+        </li>
+
       </ul>
     </article>
 
-
-    <form class="form__base" action="https://www.freecodecamp.com/email-submit"
+    <article class="form__base">
+      <form class="form__container" action="https://www.freecodecamp.com/email-submit"
       id="form">
       <input type="email" name="email" id="email"
-        placeholder="Let us contact you by giving us you email! :D" required>
+        placeholder="Let us contact you by giving me you email! :D" required>
       <input type="submit" value="Submit" id="submit">
     </form>
+    </article>
   </main>
   <footer class="footer__base" id="footer">
     <div class="footer__container">

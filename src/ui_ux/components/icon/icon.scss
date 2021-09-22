@@ -1,0 +1,11 @@
+@import "../../abstracts/abstracts.scss";
+
+$block: "icon";
+
+.#{$block} {
+  @include e('javascript') {
+    &.services__icon {
+      width: 4rem;
+    }
+  }
+}

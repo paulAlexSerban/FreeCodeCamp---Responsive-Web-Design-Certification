@@ -9,41 +9,34 @@ $block: "services";
     width: 100%;
     background-color: #8c748f;
     color: $c-cultured;
-    padding: 6rem 0 4rem 0;
-  }
+    padding: 6rem 3rem 4rem;
 
-  @include e('heading','container') {
-    max-width: $max-width;
+    > * {
+      max-width: $max-width;
+    }
   }
 
   @include e('heading') {
-    @include flex($direction: column);
-
     margin-top: 0;
     border-bottom: solid 2px rgba(0, 0, 0, 0.125);
-    padding-bottom: 1rem;
+    padding: 2rem 0rem;
     width: 100%;
+    text-align: center;
 
-    @include respond(min-tab-port) {
-      grid-column: span 3;
-    }
-
-    span:first-child {
+    span{
       text-transform: uppercase;
       letter-spacing: 1rem;
       font-sizing: 3.5rem;
-    }
-
-    span:last-child {
-      font-weight: 100;
-      font-size: 1.8rem;
     }
   }
 
   @include e('container') {
     display: grid;
     grid-template-columns: 1fr;
-    
+    padding: 0 3rem;
+    column-gap: 6rem;
+    row-gap: 6rem;
+    margin-top: 3.5rem;
 
     @include respond(min-tab-port) {
       grid-template-columns: repeat(3, 1fr);
@@ -51,54 +44,57 @@ $block: "services";
   }
 
   @include e('section') {
-    margin-top: 3.5rem;
-    padding: 3rem;
-
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content 1fr;
-
+    padding: 2.5rem;
     border-radius: 0.25rem;
     border: solid 1px rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 1.5rem 4rem rgba($c-black, 0.15);
+    transition: all 0.3s;
 
-    &:not(:first-child) {
-      margin-left: 2rem;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
     }
+  }
+
+  @include e('icon-wrapper') {
+    @include flex();
+    
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    background-color: $c-cultured;
   }
 
   @include e('icon') {
     display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    stroke-width: 1px;
-    stroke: currentColor;
-    fill: currentColor;
+    width: 5rem;
+    height: 5rem;
+    fill: #8c748f;
   }
 
   @include e('section-title') {
-    font-size: 1.6rem;
-    padding-left: 2rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
 
   @include e('list') {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     grid-column: span 2;
   }
 
   @include e('list-item') {
     @include flex($cross: flex-start, $direction: column);
 
-    p {
-      font-size: 1.4rem;
-      padding-left: 1.6rem;
+    &:not(:first-child) {
+      margin-top: 2rem;
     }
-  }
 
-
-
-  @include e('content') {
-    width: 100%;
+    p {
+      font-size: 1.6rem;
+      letter-spacing: 0.06rem;
+      line-height: 2.5rem;
+    }
   }
 
   @include e('item-heading') {
