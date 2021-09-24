@@ -1,0 +1,1883 @@
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/main.scss ***!
+  \******************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+/**
+/* Make all elements from DOM inherit from parent box-sizing
+/* Since `*` has a specificity of 0, it does not override the `html` value making all elements inheriting frm the root box-sizing value
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+* Setup the box model on the root level
+*/
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+  /**
+  * 1. Correct the line height in all browsers.
+  * 2. Prevent adjustments of font size after orientation changes in iOS.
+  */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+@media only screen and (min-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (min-width: 75.0625em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: var(--body-padding);
+}
+body > * {
+  width: var(--all-elements-width);
+  max-width: var(--all-elements-max-width);
+}
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+  animation: none !important;
+  transition: none !important;
+}
+body.is-navigation-visible {
+  overflow: hidden;
+}
+
+main {
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  display: block;
+}
+
+hr {
+  /**
+  * 1. Add the correct box sizing in Firefox.
+  * 2. Show the overflow in Edge and IE.
+  */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+pre {
+  /**
+  * 1. Correct the inheritance and scaling of font size in all browsers.
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+a {
+  /**
+  * Remove the gray background on active links in IE 10.
+  */
+  background-color: transparent;
+}
+
+abbr[title] {
+  /**
+  * 1. Remove the bottom border in Chrome 57-
+  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+  */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+b,
+strong {
+  /**
+  * Add the correct font weight in Chrome, Edge, and Safari.
+  */
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  /**
+  * 1. Correct the inheritance and scaling of font size in all browsers.
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+small {
+  /**
+  * Add the correct font size in all browsers.
+  */
+  font-size: 80%;
+}
+
+sub,
+sup {
+  /**
+  * Prevent `sub` and `sup` elements from affecting the line height in
+  * all browsers.
+  */
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  /**
+  * Remove the border on images inside links in IE 10.
+  */
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  /**
+  * 1. Change the font styles in all browsers.
+  * 2. Remove the margin in Firefox and Safari.
+  */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+button,
+input {
+  /**
+  * Show the overflow in IE.
+  * 1. Show the overflow in Edge.
+  */
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /**
+  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+  * 1. Remove the inheritance of text transform in Firefox.
+  */
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  /**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  /**
+  * Remove the inner border and padding in Firefox.
+  */
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  /**
+  * Restore the focus styles unset by the previous rule.
+  */
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  /**
+  * Correct the padding in Firefox.
+  */
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  /**
+  * 1. Correct the text wrapping in Edge and IE.
+  * 2. Correct the color inheritance from `fieldset` elements in IE.
+  * 3. Remove the padding so developers are not caught out when they zero out
+  *    `fieldset` elements in all browsers.
+  */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+progress {
+  /**
+  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+  */
+  vertical-align: baseline;
+}
+
+textarea {
+  /**
+  * Remove the default vertical scrollbar in IE 10+.
+  */
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  /**
+  * 1. Add the correct box sizing in IE 10.
+  * 2. Remove the padding in IE 10.
+  */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  /**
+  * Correct the cursor style of increment and decrement buttons in Chrome.
+  */
+  height: auto;
+}
+
+[type=search] {
+  /**
+  * 1. Correct the odd appearance in Chrome and Safari.
+  * 2. Correct the outline style in Safari.
+  */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+[type=search]::-webkit-search-decoration {
+  /**
+  * Remove the inner padding in Chrome and Safari on macOS.
+  */
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  /**
+  * 1. Correct the inability to style clickable types in iOS and Safari.
+  * 2. Change font properties to `inherit` in Safari.
+  */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+details {
+  /**
+  * Add the correct display in Edge, IE 10+, and Firefox.
+  */
+  display: block;
+}
+
+summary {
+  /*
+  * Add the correct display in all browsers.
+  */
+  display: list-item;
+}
+
+template {
+  /**
+  * Add the correct display in IE 10+.
+  */
+  display: none;
+}
+
+[hidden] {
+  /**
+  * Add the correct display in IE 10.
+  */
+  display: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::selection {
+  background-color: #1f1f1f;
+  color: #eeeeee;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+}
+@media only screen and (min-width: 56.25em) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.1rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  h1 {
+    font-size: 4.8rem;
+    line-height: 4.9rem;
+  }
+}
+
+h2 {
+  margin-top: 1.6rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+@media only screen and (min-width: 56.25em) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  h2 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+}
+
+h3 {
+  margin-top: 1.6rem;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+}
+@media only screen and (min-width: 56.25em) {
+  h3 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  h3 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/pages/portfolio.scss ***!
+  \*****************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+body {
+  --body-padding: 0;
+  --all-elements-width: auto;
+  --all-elements-max-width: auto;
+  --text-color: #1f1f1f;
+  --background-color: #eeeeee;
+  --overlaid-background-color: #494949;
+  --overlaid-text-color: #eeeeee;
+}
+
+.header__base {
+  --header-width: 100vw;
+  --header-background-color: #7c7b9c;
+  --header-height: 100vh;
+  --header-margin-top: 0;
+  --header-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.navigation__base {
+  --navigation-top-position: 0;
+  --navigation-position-tab: fixed;
+  --navigation-border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/layout/navigation/navigation.scss ***!
+  \******************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.navigation__base {
+  position: fixed;
+  top: 0;
+  right: -80%;
+  z-index: 5;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.6s ease-in-out;
+  width: 80%;
+}
+@media only screen and (min-width: 56.25em) {
+  .navigation__base {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    z-index: 5;
+    width: 50%;
+  }
+}
+body.is-navigation-visible .navigation__base {
+  right: 0;
+}
+body.is-navigation-visible .navigation__base ~ * {
+  transition: filter 0.3s;
+  filter: blur(10px);
+}
+.navigation__container {
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+  transition: opacity 0.6s ease-in-out, padding 0.6s ease-in-out;
+  height: 100%;
+  background-color: var(--overlaid-background-color);
+}
+body.is-navigation-visible .navigation__container {
+  opacity: 1;
+  padding-left: 5rem;
+}
+@media only screen and (min-width: 56.25em) {
+  body.is-navigation-visible .navigation__container {
+    padding-left: 10rem;
+  }
+}
+.navigation__heading {
+  color: var(--overlaid-text-color);
+}
+.navigation__list {
+  color: var(--overlaid-text-color);
+}
+.navigation__heading {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body.is-navigation-visible .navigation__heading {
+  opacity: 1;
+}
+.navigation__list {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  opacity: 0;
+  font-size: 2.4rem;
+  margin-top: 1.5rem;
+  padding-right: 9rem;
+}
+body.is-navigation-visible .navigation__list {
+  opacity: 1;
+}
+.navigation__list-item {
+  width: 100%;
+}
+.navigation__list-item:not(:last-child) {
+  border-bottom: var(--navigation-border-bottom);
+}
+.navigation__link, .navigation__link:link, .navigation__link:visited, .navigation__link:active, .navigation__link:focus {
+  color: var(--overlaid-text-color);
+  padding: 3.5rem 0;
+  display: block;
+  font-weight: lighter;
+  letter-spacing: 0.3rem;
+}
+.navigation__link:hover {
+  text-decoration: none;
+}
+.navigation__list-item:hover .navigation__link {
+  color: #ffb093;
+}
+.navigation__toggle {
+  position: absolute;
+  top: 3rem;
+  left: -8rem;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3sls;
+  outline: none;
+  padding: 2rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in;
+}
+.navigation__toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+html:not([data-scroll="0"]) .navigation__toggle {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media only screen and (min-width: 56.25em) {
+  .navigation__toggle {
+    position: absolute;
+    top: 3rem;
+    left: -12rem;
+  }
+}
+.navigation__toggle::selection {
+  background-color: transparent;
+}
+.navigation__toggle-line-1 {
+  position: relative;
+  background-color: #fff;
+  width: 3rem;
+  height: 3px;
+  display: block;
+  opacity: 1;
+  border-radius: 15%;
+  transition: all 0.3s;
+}
+.navigation__toggle-line-2 {
+  position: relative;
+  background-color: #fff;
+  width: 3rem;
+  height: 3px;
+  display: block;
+  opacity: 1;
+  border-radius: 15%;
+  transition: all 0.3s;
+}
+.navigation__toggle-line-3 {
+  position: relative;
+  background-color: #fff;
+  width: 3rem;
+  height: 3px;
+  display: block;
+  opacity: 1;
+  border-radius: 15%;
+  transition: all 0.3s;
+}
+.navigation__toggle-line-2 {
+  margin-top: 8px;
+}
+.navigation__toggle-line-3 {
+  margin-top: 8px;
+}
+body.is-navigation-visible .navigation__toggle-line-1 {
+  position: relative;
+  top: 5px;
+  transform: rotate(270deg);
+  opacity: 0;
+}
+body.is-navigation-visible .navigation__toggle-line-2 {
+  transform: rotate(45deg);
+}
+body.is-navigation-visible .navigation__toggle-line-3 {
+  position: relative;
+  top: -10px;
+  transform: rotate(-45deg);
+}
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/layout/header/header.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.header__base {
+  margin-top: var(--header-margin-top);
+  background-color: var(--header-background-color);
+  overflow: hidden;
+  width: var(--header-width);
+  transition: filter 0.6s ease-in-out;
+  height: var(--header-height);
+}
+.header__base > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  stroke: rgba(255, 255, 255, 0.1);
+}
+.header__container {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+@media only screen and (min-width: 56.25em) {
+  .header__container {
+    padding-top: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+.header__heading {
+  padding: 1.6rem 0.8rem;
+}
+.header__title {
+  font-size: 3rem;
+  line-height: 3.4rem;
+  font-style: italic;
+  font-family: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  display: block;
+}
+@media only screen and (min-width: 56.25em) {
+  .header__title {
+    font-size: 3.4rem;
+    line-height: 3.1rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  .header__title {
+    font-size: 3.8rem;
+    line-height: 3.9rem;
+  }
+}
+.header__title-description {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-indent: 2rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .header__title-description {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (min-width: 63.125em) {
+  .header__title-description {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+.header__image-logo {
+  width: 100%;
+  max-width: 100px;
+  display: block;
+  overflow: hidden;
+  margin-right: 2.5rem;
+}
+/*!******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/layout/main/main.scss ***!
+  \******************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.main__base {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/layout/gallery/gallery.scss ***!
+  \************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.gallery__base {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #94aacb;
+  color: #eeeeee;
+  padding: 6rem 3rem 4rem;
+}
+.gallery__base > * {
+  max-width: 144rem;
+}
+.gallery__heading {
+  margin-top: 0;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+  padding: 2rem 0rem;
+  width: 100%;
+  text-align: center;
+}
+.gallery__heading span {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-sizing: 3.5rem;
+}
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  margin-top: 6rem;
+  padding: 3rem;
+  width: 100%;
+}
+@media only screen and (min-width: 37.5em) {
+  .gallery__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 6rem;
+  }
+}
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/layout/footer/footer.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.footer__base {
+  background-color: var(--overlaid-background-color);
+  overflow: hidden;
+  width: 100vw;
+  padding: 3rem;
+}
+.footer__title {
+  margin: 2.4rem;
+}
+.footer__copyright {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+.footer__copyright a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.footer__copyright a:hover, .footer__copyright a:active, .footer__copyright a:focus {
+  color: #eeeeee;
+  text-decoration: none;
+}
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/icon/icon.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.icon__javascript.services__icon {
+  width: 4rem;
+}
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/icon-list/icon-list.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.icon-list__base {
+  margin-top: 3rem;
+}
+.card__base .icon-list__base {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.form__base .icon-list__base, .footer__base .icon-list__base, .navigation__base .icon-list__base {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(4, 5rem);
+  row-gap: 3rem;
+  column-gap: 3rem;
+}
+.icon-list__link {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #eeeeee;
+  text-decoration: none;
+}
+.icon-list__link:hover, .icon-list__link:active, .icon-list__link:focus {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.icon-list__icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-list__tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 4;
+  padding: 0.8rem 1rem;
+  border-radius: 4rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  display: block;
+  width: 300%;
+  text-align: center;
+}
+.icon-list__tooltip:after {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 1rem 1rem 0 1rem;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+.icon-list__link:hover .icon-list__tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -100%);
+}
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/banner/banner.scss ***!
+  \**************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.banner__base {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__container {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__heading {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__base {
+  cursor: default;
+  height: 100vh;
+  min-height: 35rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+body.is-preload .banner__base:after {
+  opacity: 1;
+}
+.banner__heading {
+  width: fit-content;
+  color: #eeeeee;
+}
+.banner__title {
+  position: relative;
+  z-index: 2;
+  transform: scale(1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+  font-size: 4.75rem;
+  opacity: 1;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+.banner__title:before, .banner__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: width 0.85s ease;
+  transition-delay: 0.25s;
+  background: #eeeeee;
+  height: 2px;
+  width: 100%;
+}
+.banner__title:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner__title:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+body.is-preload .banner__title {
+  transform: scale(0.95);
+  opacity: 0;
+}
+body.is-preload .banner__title:before, body.is-preload .banner__title:after {
+  width: 0;
+}
+.banner__description {
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.225rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transition-delay: 1s;
+}
+.banner__description a {
+  color: inherit;
+}
+body.is-preload .banner__description {
+  opacity: 0;
+}
+.banner__find-more, .banner__find-more:link, .banner__find-more:visited, .banner__find-more:active, .banner__find-more:focus {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 3;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translate(-50%, 0);
+  transition: all 0.75s ease-in-out;
+  transition-delay: 1s;
+  color: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  opacity: 1;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20rem;
+  height: 20rem;
+  color: #eeeeee;
+  text-decoration: none;
+}
+body.is-preload .banner__find-more, body.is-preload .banner__find-more:link, body.is-preload .banner__find-more:visited, body.is-preload .banner__find-more:active, body.is-preload .banner__find-more:focus {
+  opacity: 0;
+  transform: translate(-50%, 100%);
+}
+.banner__find-more svg {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-top: 5rem;
+}
+.banner:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  transition: opacity 3s ease-in-out;
+  transition-delay: 1.25s;
+  background: #2e3842;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/about/about.scss ***!
+  \************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.about__base {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3d9b93;
+  color: #eeeeee;
+  padding: 6rem 0 4rem 0;
+}
+@media only screen and (min-width: 56.25em) {
+  .about__content {
+    max-width: 144rem;
+  }
+}
+.about__heading {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+  padding-bottom: 2rem;
+}
+.about__heading span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-sizing: 3.5rem;
+}
+.about__body {
+  display: grid;
+  padding: 0 3rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .about__body {
+    padding: 0 10rem;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .about__body {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+  }
+}
+.about__description {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3rem;
+}
+.about__icon {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.about__text {
+  text-align: center;
+  letter-spacing: 0.06rem;
+  line-height: 2.5rem;
+}
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/card/card.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.card__back, .card__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  height: 100%;
+}
+@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+  .card__back, .card__front {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+}
+
+.card__base {
+  transition: all 0.3s;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.card__base.card__base--showBack .card__front {
+  transform: rotateY(-180deg);
+}
+@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+  .card__base.card__base--showBack .card__front {
+    transform: rotateY(0);
+  }
+}
+.card__base.card__base--showBack .card__back {
+  transform: rotateY(0deg);
+}
+.card__front {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.card__image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.card__image-wrapper::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.card__image-wrapper > .card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+.card__base:hover .card__image {
+  transform: scale(1);
+  filter: blur(3px) brightness(80%);
+}
+.card__image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.card__base:hover .card__image-caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.card__project-heading {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__project-heading span {
+  display: block;
+}
+.card__project-heading span:last-child {
+  margin-top: 1.5rem;
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.card__project-title {
+  text-align: center;
+  font-size: 3rem;
+}
+.card__back {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+  .card__back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.card__description {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.card__description span {
+  font-weight: bold;
+}
+.card__tech-stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+}
+.card__tech-stack-title {
+  grid-column: span 2;
+}
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/services/service.scss ***!
+  \*****************************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.services__base {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #8c748f;
+  color: #eeeeee;
+  padding: 6rem 3rem 4rem;
+}
+.services__base > * {
+  max-width: 144rem;
+}
+.services__heading {
+  margin-top: 0;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+  padding: 2rem 0rem;
+  width: 100%;
+  text-align: center;
+}
+.services__heading span {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-sizing: 3.5rem;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 3rem;
+  column-gap: 6rem;
+  row-gap: 6rem;
+  margin-top: 3.5rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.services__section {
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+.services__section:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.services__icon-wrapper {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+  background-color: #eeeeee;
+}
+.services__icon {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  fill: #8c748f;
+}
+.services__section-title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+.services__list {
+  margin-top: 1.6rem;
+  grid-column: span 2;
+}
+.services__list-item {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.services__list-item:not(:first-child) {
+  margin-top: 2rem;
+}
+.services__list-item p {
+  font-size: 1.6rem;
+  letter-spacing: 0.06rem;
+  line-height: 2.5rem;
+}
+.services__item-heading {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./ui_ux/components/form/form.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.foo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
+.form__base {
+  background-color: #bc8882;
+  width: 100%;
+  color: #eeeeee;
+  padding: 3rem 0 4rem;
+}
+.form__base > * {
+  max-width: 144rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  grid-column: span 2;
+}
+.form__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 3rem;
+}
+.form__element {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 6rem 0;
+  padding: 4rem 0;
+  border-radius: 0.25rem;
+  width: 80%;
+}
+.form__label {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.form__label-span {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.form__input {
+  margin-top: 1rem;
+  width: 75%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #eeeeee;
+  font-size: 1.4rem;
+}
+.form__textarea {
+  grid-column: span 2;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #eeeeee;
+  font-size: 1.4rem;
+}
+.form__submit {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #eeeeee;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  font-weight: bold;
+}
+.form__details {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: solid 2px rgba(0, 0, 0, 0.125);
+}

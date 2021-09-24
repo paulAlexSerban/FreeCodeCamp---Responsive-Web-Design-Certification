@@ -1,36 +1,31 @@
-@import '../../abstracts/abstracts.scss';
+@import "../../abstracts/abstracts.scss";
 
-$block: 'footer';
+$block: "footer";
 
 .#{$block} {
-  @include e('base') {
+  @include e("base") {
     background-color: var(--overlaid-background-color);
     overflow: hidden;
-    box-shadow: $box-shadow-dark;
     width: 100vw;
+    padding: 3rem;
   }
 
-  @include e('title') {
+  @include e("title") {
     margin: $basesize * 3;
   }
 
-  @include e('copyright') {
-    text-align: right;
-    color: $c-davys-grey;
-    margin-bottom: $basesize;
+  @include e("copyright") {
+    text-align: center;
+    color: $c-cultured;
     font-size: 1.2rem;
+    margin-top: 3rem;
 
     a {
-      &,
-      &:link,
-      &:visited,
-      &:active,
-      &:focus {
-        color: $c-eerie-black;
-        text-decoration: none;
-      }
-  
-      &:hover {
+      color: $c-cultured;
+      text-decoration: none;
+
+      @include on-event {
+        color: $c-cultured;
         text-decoration: none;
       }
     }

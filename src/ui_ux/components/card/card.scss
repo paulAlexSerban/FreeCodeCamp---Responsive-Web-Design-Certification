@@ -1,0 +1,149 @@
+@import "../../abstracts/abstracts.scss";
+
+  %card {
+    @include absCenter($left: 0, $top: 0, $translated: false);
+
+    transition: all 0.8s ease;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($c-black, .15);
+    border-radius: 0.25rem;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    height: 100%;
+
+
+    @include respond(touch-phone-only) {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+    }
+  }
+
+  $block: "card";
+
+  .#{$block} {
+    @include e('base') {
+      transition: all 0.3s;
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      height: 50rem;
+  
+      &.#{$block}__base--showBack {
+        .#{$block}__front {
+          transform: rotateY(-180deg);
+    
+          @include respond(touch-phone-only) {
+            transform: rotateY(0);
+          }
+        }
+  
+        .#{$block}__back {
+          transform: rotateY(0deg);
+        }
+      }
+    }
+
+    @include e('front') {
+      @include flex($direction: column, $main: space-between);
+      @extend %card;
+
+      cursor: pointer;
+    }
+  
+    @include e('image-wrapper') {
+      @include aspect-ratio(16, 9, 'card__image');
+  
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    @include e('image') {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.2);
+      backface-visibility: hidden;
+      transition: all 0.5s;
+
+      .#{$block}__base:hover & {
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+      }
+    }
+
+    @include e('image-caption') {
+      @include absCenter;
+
+      opacity: 0;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+
+      .#{$block}__base:hover & {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  
+    @include e('project-heading') {
+      @include flex($direction: column);
+      
+      span {
+        display: block;
+  
+        &:last-child {
+          margin-top: 1.5rem;
+          font-weight: 100;
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  
+    @include e('project-title') {
+      text-align: center;
+      font-size: 3rem;
+    }
+    
+  
+    @include e('back') {
+      @include flex($direction: column, $main: space-between);
+  
+      @extend %card;
+  
+      transform: rotateY(180deg);
+  
+      @include respond(touch-phone-only) {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  
+    @include e('container') {
+  
+    }
+  
+    @include e('description') {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+  
+      span {
+        font-weight: bold;
+      }
+    }
+
+    @include e('tech-stack') {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1.5rem;
+    }
+
+    @include e('tech-stack-title') {
+      grid-column: span 2;
+    }
+  }

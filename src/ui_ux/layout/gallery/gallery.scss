@@ -1,0 +1,56 @@
+@import "../../abstracts/abstracts.scss";
+
+$block: "gallery";
+
+.#{$block} {
+  @include e('base') {
+    @include flex($direction: column);
+
+    width: 100%;
+    background-color: #94aacb;
+    color: $c-cultured;
+    padding: 6rem 3rem 4rem;
+
+    > * {
+      max-width: $max-width;
+    }
+  }
+
+  @include e('heading') {
+    margin-top: 0;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    padding: 2rem 0rem;
+    width: 100%;
+    text-align: center;
+
+    span{
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      font-sizing: 3.5rem;
+    }
+  }
+
+  @include e('list') {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin-top: 6rem;
+    padding: 3rem;
+    width: 100%;
+
+    @include respond(min-mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(min-tab-port) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 6rem;
+      row-gap: 6rem;
+    }
+  }
+
+  @include e('list-item') {
+
+  }
+}

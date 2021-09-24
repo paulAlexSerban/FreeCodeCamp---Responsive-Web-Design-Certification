@@ -2,6 +2,7 @@ $z-i:
   base,
   banner__title,
   banner__find-more,
+  tooltip,
   navigation__base;
 
 @function z-index($element, $list: $z-i) {

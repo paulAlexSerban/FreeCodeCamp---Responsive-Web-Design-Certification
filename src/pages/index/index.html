@@ -9,6 +9,8 @@
     src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
   <title>fcc - Personal Portfolio</title>
+  <link rel="shortcut icon" href="../../assets/icons/common/favicon-32x32.png"
+    type="image/x-icon">
 </head>
 
 <body class="personal-portfolio is-preload" id="body">
@@ -44,37 +46,64 @@
         </li>
       </ul>
 
-      <div class="social-media__base">
-        <ul class="social-media__list">
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#resume">Resume</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#linkedin">LinkedIn</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#github">GitHub</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#codepen">CodePen</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#freecodecamp">FreeCodeCamp</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#hackerrank">HackerRank</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#hackthebox">Hack The Box</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#tryhackme">Try Hack Me</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#email">Email</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="icon-list__base">
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/documents.svg"
+              alt="codepen logo" class="icon-list__icon">
+            <span class="icon-list__tooltip">Personal Resume</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/linkedin.svg"
+              alt="codepen logo" class="icon-list__icon">
+            <span class="icon-list__tooltip">LinkedIn</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/github-logo.svg"
+              alt="github profile link" class="icon-list__icon">
+            <span class="icon-list__tooltip">Github</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/codepen-logo.svg"
+              alt="codepen profile link" class="icon-list__icon">
+            <span class="icon-list__tooltip">Codepen</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/common/Freecodecamp-icon-vector-01.svg"
+              alt="Free code camp profile link" class="icon-list__icon">
+            <span class="icon-list__tooltip">Freecodecamp Prfile</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/hackerrank.svg"
+              alt="link to live" class="icon-list__icon">
+            <span class="icon-list__tooltip">Hackerrank Profile</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/hackthebox.svg"
+              alt="link to live" class="icon-list__icon">
+            <span class="icon-list__tooltip">Hack The Box Profile</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list__link" href="javascript:void(0)">
+            <img src="../../assets/icons/portfolio/email-envelope.svg"
+              alt="email opener" class="icon-list__icon">
+            <span class="icon-list__tooltip">Email Me</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -277,242 +306,599 @@
     </article>
 
 
-    <article class="gallery__base" id="projects" data-js-cmp="gallery">
+    <article class="gallery__base" id="projects">
       <h2 class="gallery__heading">
         <span>Work I did</span>
       </h2>
       <ul class="gallery__list">
         <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+          <div class="card__base" data-js-cmp="card">
+            <div class="card__front">
+              <figure class="card__image-wrapper">
+                <img src="../../assets/images/lorem-image.jpg"
+                  alt="product landing page screenshot" class="card__image">
+                <figcaption class="card__image-caption">Click for more details
+                </figcaption>
+              </figure>
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Hiccup Service</span>
+                <span class="card__project-type">Product Landing Page</span>
+              </h3>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/sass-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Scss / Sass</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/javascript-logo.svg"
+                      alt="javascript logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Javascript</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/webpack-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Webpack</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/responsive.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Responsive Web
+                      Design</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
+            <div class="card__back">
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Hiccup Service</span>
+                <span class="card__project-type">Product Landing Page</span>
+              </h3>
+              <div class="card__container">
+                <p class="card__description">A FreeCodeCamp project for
+                  the Responsive Web Design
+                  Certification. <span>Hickup Water</span> was designed,
+                  developed
+                  developed and optimized to be Responsive and ready for mobile
+                  first.</p>
+                <div class="card__tech-stack">
+                  <p class="card__tech-stack-title">Tech Stack</p>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Front-end</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">HTML5</li>
+                      <li class="card__tech-item">CSS3 - Scss/Sass</li>
+                      <li class="card__tech-item">JavaScript</li>
+                      <li class="card__tech-item">Webpack</li>
+                      <li class="card__tech-item">Npm</li>
+                    </ul>
+                  </div>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Back-end & Devops</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">Docker</li>
+                      <li class="card__tech-item">Shell</li>
+                      <li class="card__tech-item">Make</li>
+                      <li class="card__tech-item">Nginx</li>
+                      <li class="card__tech-item">Apache HTTPD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/codepen-logo.svg"
+                      alt="codepen logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Codepen</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/github-logo.svg"
+                      alt="github logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Github</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/link.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Live Demo</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/folder-open.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Project Brief</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/cogs.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Technical Wiki</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
         <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+          <div class="card__base" data-js-cmp="card">
+            <div class="card__front">
+              <figure class="card__image-wrapper">
+                <img src="../../assets/images/lorem-image.jpg"
+                  alt="product landing page screenshot" class="card__image">
+                <figcaption class="card__image-caption">Click for more details
+                </figcaption>
+              </figure>
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Cocktail Knowhow</span>
+                <span class="card__project-type">Technical Documentation
+                  Page</span>
+              </h3>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/sass-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Scss / Sass</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/javascript-logo.svg"
+                      alt="javascript logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Javascript</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/webpack-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Webpack</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/responsive.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Responsive Web
+                      Design</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
+            <div class="card__back">
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Hiccup Water</span>
+                <span class="card__project-type">Product Landing Page</span>
+              </h3>
+              <div class="card__container">
+                <p class="card__description">A FreeCodeCamp project for
+                  the Responsive Web Design
+                  Certification. <span>Cocktail Knowhow</span> was designed,
+                  developed
+                  developed and optimized to be Responsive and ready for mobile
+                  first.</p>
+                <div class="card__tech-stack">
+                  <p class="card__tech-stack-title">Tech Stack</p>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Front-end</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">HTML5</li>
+                      <li class="card__tech-item">CSS3 - Scss/Sass</li>
+                      <li class="card__tech-item">JavaScript</li>
+                      <li class="card__tech-item">Webpack</li>
+                      <li class="card__tech-item">Npm</li>
+                    </ul>
+                  </div>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Back-end & Devops</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">Docker</li>
+                      <li class="card__tech-item">Shell</li>
+                      <li class="card__tech-item">Make</li>
+                      <li class="card__tech-item">Nginx</li>
+                      <li class="card__tech-item">Apache HTTPD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/codepen-logo.svg"
+                      alt="codepen logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Codepen</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/github-logo.svg"
+                      alt="github logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Github</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/link.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Live Demo</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/folder-open.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Project Brief</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/cogs.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Technical Wiki</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
         <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+          <div class="card__base" data-js-cmp="card">
+            <div class="card__front">
+              <figure class="card__image-wrapper">
+                <img src="../../assets/images/lorem-image.jpg"
+                  alt="product landing page screenshot" class="card__image">
+                <figcaption class="card__image-caption">Click for more details
+                </figcaption>
+              </figure>
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Cocktail Taste
+                  Experience</span>
+                <span class="card__project-type">Survey Form</span>
+              </h3>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/sass-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Scss / Sass</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/javascript-logo.svg"
+                      alt="javascript logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Javascript</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/webpack-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Webpack</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/responsive.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Responsive Web
+                      Design</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
+            <div class="card__back">
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Cocktail Taste
+                  Experience</span>
+                <span class="card__project-type">Survey Form</span>
+              </h3>
+              <div class="card__container">
+                <p class="card__description">A FreeCodeCamp project for
+                  the Responsive Web Design
+                  Certification. <span>Cocktail Taste Experience</span> was
+                  designed, developed
+                  developed and optimized to be Responsive and ready for mobile
+                  first.</p>
+                <div class="card__tech-stack">
+                  <p class="card__tech-stack-title">Tech Stack</p>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Front-end</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">HTML5</li>
+                      <li class="card__tech-item">CSS3 - Scss/Sass</li>
+                      <li class="card__tech-item">JavaScript</li>
+                      <li class="card__tech-item">Webpack</li>
+                      <li class="card__tech-item">Npm</li>
+                    </ul>
+                  </div>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Back-end & Devops</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">Docker</li>
+                      <li class="card__tech-item">Shell</li>
+                      <li class="card__tech-item">Make</li>
+                      <li class="card__tech-item">Nginx</li>
+                      <li class="card__tech-item">Apache HTTPD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/codepen-logo.svg"
+                      alt="codepen logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Codepen</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/github-logo.svg"
+                      alt="github logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Github</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/link.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Live Demo</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/folder-open.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Project Brief</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/cogs.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Technical Wiki</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
         <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
+          <div class="card__base" data-js-cmp="card">
+            <div class="card__front">
+              <figure class="card__image-wrapper">
+                <img src="../../assets/images/lorem-image.jpg"
+                  alt="product landing page screenshot" class="card__image">
+                <figcaption class="card__image-caption">Click for more details
+                </figcaption>
+              </figure>
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Jerry 'The Professor'
+                  Thomas</span>
+                <span class="card__project-type">Tribute Page</span>
+              </h3>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/sass-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Scss / Sass</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/javascript-logo.svg"
+                      alt="javascript logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Javascript</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/webpack-logo.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Webpack</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/responsive.svg"
+                      alt="scss logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Responsive Web
+                      Design</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
+            <div class="card__back">
+              <h3 class="card__project-heading">
+                <span class="card__project-title">Jerry 'The Professor'
+                  Thomas</span>
+                <span class="card__project-type">Tribute Page</span>
+              </h3>
+              <div class="card__container">
+                <p class="card__description">A FreeCodeCamp project for
+                  the Responsive Web Design
+                  Certification. <span>Jerry 'The Professor' Thomas</span> was
+                  designed, developed
+                  developed and optimized to be Responsive and ready for mobile
+                  first.</p>
+                <div class="card__tech-stack">
+                  <p class="card__tech-stack-title">Tech Stack</p>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Front-end</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">HTML5</li>
+                      <li class="card__tech-item">CSS3 - Scss/Sass</li>
+                      <li class="card__tech-item">JavaScript</li>
+                      <li class="card__tech-item">Webpack</li>
+                      <li class="card__tech-item">Npm</li>
+                    </ul>
+                  </div>
+                  <div class="card__tech-stack-section">
+                    <p class="card__teck-section-title">Back-end & Devops</p>
+                    <ul class="card__tech-list">
+                      <li class="card__tech-item">Docker</li>
+                      <li class="card__tech-item">Shell</li>
+                      <li class="card__tech-item">Make</li>
+                      <li class="card__tech-item">Nginx</li>
+                      <li class="card__tech-item">Apache HTTPD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="icon-list__base">
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/codepen-logo.svg"
+                      alt="codepen logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Codepen</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/github-logo.svg"
+                      alt="github logo" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Github</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/link.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Live Demo</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/folder-open.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Project Brief</span>
+                  </a>
+                </li>
+                <li class="icon-list__item">
+                  <a class="icon-list__link" href="javascript:void(0)">
+                    <img src="../../assets/icons/portfolio/cogs.svg"
+                      alt="link to live" class="icon-list__icon">
+                    <span class="icon-list__tooltip">Technical Wiki</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
-            </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
-          </div>
-        </li>
-        <li class="gallery__list-item">
-          <div class="gallery__card-front">
-            <div class="gallery__image-wrapper">
-              <img src="../../assets/images/lorem-image.jpg" alt="product landing page screenshot" class="gallery__image">
-            </div>
-            <h3 class="gallery__project-heading">
-              <span class="gallery__project-title">Hiccup Water</span>
-              <span class="gallery__project-type">Product Landing Page</span> 
-            </h3>
-            <ul class="gallery__tech-list">
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/sass-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/javascript-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/webpack-logo.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-              <li class="gallery__tech-item-wrapper">
-                <img src="../../assets/icons/portfolio/responsive.svg" alt="free code camp logo" class="gallery__tech-icon">
-              </li>
-            </ul>
-          </div>
-          <div class="gallery__card-back">
-            <a class="gallery__link" href="./product_landing_page.html" target="
-            _blank" rel="noopener noreferrer">LIVE</a>
-          </div>
-        </li>
-
       </ul>
     </article>
 
     <article class="form__base">
-      <form class="form__container" action="https://www.freecodecamp.com/email-submit"
-      id="form">
-      <input type="email" name="email" id="email"
-        placeholder="Let us contact you by giving me you email! :D" required>
-      <input type="submit" value="Submit" id="submit">
-    </form>
+      <h3 class="form__heading">Get in touch</h3>
+      <div class="form__container">
+        <form class="form__element" action="https://www.freecodecamp.com/email-submit" id="form">
+          <label class="form__label" for="name">
+            <span class="form__label-span">Name</span>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+        </label>
+          <label class="form__label" for="email">
+            <span class="form__label-span">Email</span>
+          <input class="form__input"type="email" name="email" id="email" placeholder="Email"
+            required>
+          </label>
+          <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+          <input class="form__submit" type="submit" value="Submit" id="submit">
+        </form>
+        <div class="form__details">
+          <p class="form__detail-email">
+            <span class="form__detail-name">Email</span>
+            <span class="form__detail-value">paul.alex.serban@gmail.com</span>
+          </p>
+          <ul class="icon-list__base">
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/documents.svg"
+                  alt="codepen logo" class="icon-list__icon">
+                <span class="icon-list__tooltip">Personal Resume</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/linkedin.svg"
+                  alt="codepen logo" class="icon-list__icon">
+                <span class="icon-list__tooltip">LinkedIn</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/github-logo.svg"
+                  alt="github profile link" class="icon-list__icon">
+                <span class="icon-list__tooltip">Github</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/codepen-logo.svg"
+                  alt="codepen profile link" class="icon-list__icon">
+                <span class="icon-list__tooltip">Codepen</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img
+                  src="../../assets/icons/common/Freecodecamp-icon-vector-01.svg"
+                  alt="Free code camp profile link" class="icon-list__icon">
+                <span class="icon-list__tooltip">Freecodecamp Prfile</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/hackerrank.svg"
+                  alt="link to live" class="icon-list__icon">
+                <span class="icon-list__tooltip">Hackerrank Profile</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/hackthebox.svg"
+                  alt="link to live" class="icon-list__icon">
+                <span class="icon-list__tooltip">Hack The Box Profile</span>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list__link" href="javascript:void(0)">
+                <img src="../../assets/icons/portfolio/email-envelope.svg"
+                  alt="email opener" class="icon-list__icon">
+                <span class="icon-list__tooltip">Email Me</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
   </main>
   <footer class="footer__base" id="footer">
     <div class="footer__container">
-      <div class="social-media__base">
-        <ul class="social-media__list">
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#resume">Resume</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#linkedin">LinkedIn</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#github">GitHub</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#codepen">CodePen</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#freecodecamp">FreeCodeCamp</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#hackerrank">HackerRank</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#hackthebox">Hack The Box</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#tryhackme">Try Hack Me</a>
-          </li>
-          <li class="social-media__list-item">
-            <a class="social-media__link" href="#email">Email</a>
-          </li>
-        </ul>
-      </div>
+
     </div>
     <p class="footer__copyright">
-      <span>Developed & Design by
+      <span>Developed & Designed by
         <a href="#link-of-portflio-page" class="footer__link">Paul Serban &copy;
-          2021</a>
-        for the
+          2021</a> |
         <a
           href="https://www.freecodecamp.org/learn/responsive-web-design#responsive-web-design-projects">
-          freeCodeCamp - Responsive Web Design Certification</a>
-      </span> | <span hidden>Old site (to be visible only starting from version
-        2)</span>
+          freeCodeCamp - Responsive Web Design Certification Project</a>
+      </span>
     </p>
   </footer>
   <div class="modals__base" hidden>
